@@ -6,7 +6,6 @@ keywords: ["Anmeldung Germany", "registering in Germany", "first steps Germany",
 ogTitle: "Arrival and First Steps in Germany | xPatLife"
 ogDescription: "Your complete guide to the first steps after arriving in Germany"
 ogType: "article"
-canonicalUrl: "https://xpatlife.com/guide/arrival-and-first-steps"
 datePublished: "2025-11-15"
 dateModified: "2025-11-15"
 author: "xPatLife Team"

@@ -6,7 +6,6 @@ keywords: ["German education", "schools in Germany", "learning German", "German 
 ogTitle: "Education and Language Learning in Germany | xPatLife"  
 ogDescription: "Your guide to education and language learning opportunities in Germany"
 ogType: "article"
-canonicalUrl: "https://xpatlife.com/guide/education-language"
 datePublished: "2025-11-15"
 dateModified: "2025-11-15"
 author: "xPatLife Team"

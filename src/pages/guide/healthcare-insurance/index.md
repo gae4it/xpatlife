@@ -6,7 +6,6 @@ keywords: ["German health insurance", "healthcare Germany", "public health insur
 ogTitle: "Healthcare and Insurance in Germany | xPatLife"
 ogDescription: "Your complete guide to navigating German healthcare and insurance"
 ogType: "article"
-canonicalUrl: "https://xpatlife.com/guide/healthcare-insurance"
 datePublished: "2025-11-15"
 dateModified: "2025-11-15"
 author: "xPatLife Team"

@@ -6,7 +6,6 @@ keywords: ["Germany expat guide", "living in Germany", "working in Germany", "Ge
 ogTitle: "Introduction to Living in Germany | xPatLife"
 ogDescription: "Your comprehensive guide to starting life in Germany as an expat"
 ogType: "article"
-canonicalUrl: "https://xpatlife.com/guide/introduction"
 datePublished: "2025-11-15"
 dateModified: "2025-11-15"
 author: "xPatLife Team"

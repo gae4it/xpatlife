@@ -6,7 +6,6 @@ keywords: ["Germany forms", "expat checklists", "German templates", "moving chec
 ogTitle: "Appendices - Forms and Templates | xPatLife"
 ogDescription: "Useful templates and checklists for your life in Germany"
 ogType: "article"
-canonicalUrl: "https://xpatlife.com/guide/appendices"
 datePublished: "2025-11-15"
 dateModified: "2025-11-15"
 author: "xPatLife Team"

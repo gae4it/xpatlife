@@ -6,7 +6,6 @@ keywords: ["housing Germany", "apartment Germany", "rental market Germany", "fin
 ogTitle: "Housing and Accommodation in Germany | xPatLife"
 ogDescription: "Your complete guide to finding and securing housing in Germany"
 ogType: "article"
-canonicalUrl: "https://xpatlife.com/guide/housing-accommodation"
 datePublished: "2025-11-15"
 dateModified: "2025-11-15"
 author: "xPatLife Team"
