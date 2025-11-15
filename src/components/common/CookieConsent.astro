@@ -117,6 +117,9 @@
 </style>
 
 <script>
+  // Declare gtag as any to avoid TypeScript errors
+  declare const gtag: any;
+
   // Cookie consent logic
   const COOKIE_CONSENT_KEY = 'xpatlife_cookie_consent';
   const cookieBanner = document.getElementById('cookie-consent');
@@ -129,6 +132,14 @@
     const consent = localStorage.getItem(COOKIE_CONSENT_KEY);
     if (!consent) {
       cookieBanner?.classList.remove('hidden');
+    } else if (consent === 'all' && typeof gtag !== 'undefined') {
+      // Re-apply consent on page load if previously accepted
+      gtag('consent', 'update', {
+        'ad_storage': 'granted',
+        'ad_user_data': 'granted',
+        'ad_personalization': 'granted',
+        'analytics_storage': 'granted'
+      });
     }
   }
 
@@ -137,15 +148,23 @@
     localStorage.setItem(COOKIE_CONSENT_KEY, choice);
     cookieBanner?.classList.add('hidden');
 
-    // Here you can enable/disable analytics based on the choice
+    // Update Google Consent Mode based on user choice
     if (choice === 'all') {
       // Enable all cookies (analytics, tracking, etc.)
+      if (typeof gtag !== 'undefined') {
+        gtag('consent', 'update', {
+          'ad_storage': 'granted',
+          'ad_user_data': 'granted',
+          'ad_personalization': 'granted',
+          'analytics_storage': 'granted'
+        });
+      }
       console.log('All cookies accepted');
     } else if (choice === 'necessary') {
-      // Enable only necessary cookies
+      // Keep analytics and ads denied (already default)
       console.log('Only necessary cookies accepted');
     } else {
-      // Disable all non-necessary cookies
+      // Explicitly deny all (already default)
       console.log('All cookies rejected');
     }
   }
