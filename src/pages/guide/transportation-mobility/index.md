@@ -6,7 +6,6 @@ keywords: ["transportation Germany", "public transport Germany", "German driver 
 ogTitle: "Transportation and Mobility in Germany | xPatLife"
 ogDescription: "Your guide to getting around efficiently in Germany"
 ogType: "article"
-canonicalUrl: "https://xpatlife.com/guide/transportation-mobility"
 datePublished: "2025-11-15"
 dateModified: "2025-11-15"
 author: "xPatLife Team"

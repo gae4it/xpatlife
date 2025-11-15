@@ -11,7 +11,6 @@ twitterTitle: "xPatLife: Living and Working in Germany"
 twitterDescription: "Your complete guide to navigating life in Germany as an expat"
 twitterImage: "/images/twitter/guide-overview.jpg"
 twitterCard: "summary_large_image"
-canonicalUrl: "https://xpatlife.com/guide"
 datePublished: "2025-11-15"
 dateModified: "2025-11-15"
 author: "xPatLife Team"
@@ -22,34 +21,34 @@ Welcome to the xPatLife comprehensive guide for expats in Germany. Whether you'r
 
 ## What You'll Find in This Guide
 
-### Planning Your Move
+### 🛫 [Planning Your Move](/guide/planning-your-move)
 Learn about immigration requirements, visa types, and essential preparation before moving to Germany.
 
-### Arrival and First Steps
+### 🚪 [Arrival and First Steps](/guide/arrival-and-first-steps)
 Navigate your first days in Germany with confidence - from registration to setting up essential services.
 
-### Healthcare & Insurance
+### 🏥 [Healthcare & Insurance](/guide/healthcare-insurance)
 Understand the German healthcare system and choose the right insurance for your needs.
 
-### Housing & Accommodation
+### 🏠 [Housing & Accommodation](/guide/housing-accommodation)
 Find your perfect home and understand your rights as a tenant in Germany.
 
-### Employment & Career
+### 💼 [Employment & Career](/guide/employment-career)
 Discover job opportunities, understand employment contracts, and navigate the German workplace.
 
-### Education & Language
+### 📚 [Education & Language](/guide/education-language)
 Explore the German education system and resources for learning the language.
 
-### Transportation & Mobility
+### 🚇 [Transportation & Mobility](/guide/transportation-mobility)
 Master public transport, driving regulations, and getting around Germany efficiently.
 
-### Daily Life & Integration
+### 🤝 [Daily Life & Integration](/guide/daily-life-integration)
 Integrate into German society, build social networks, and enjoy cultural activities.
 
-### Financial & Legal Matters
+### 💰 [Financial & Legal Matters](/guide/financial-legal-matters)
 Manage your finances, understand the tax system, and plan for long-term residency.
 
-### Practical Resources
+### 📋 [Practical Resources](/guide/practical-resources)
 Access emergency services, manage documents, and find helpful resources.
 
 ## How to Use This Guide

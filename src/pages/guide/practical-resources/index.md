@@ -6,7 +6,6 @@ keywords: ["Germany resources", "emergency contacts Germany", "expat services", 
 ogTitle: "Practical Resources and References | xPatLife"
 ogDescription: "Essential contacts and resources for living in Germany"
 ogType: "article"
-canonicalUrl: "https://xpatlife.com/guide/practical-resources"
 datePublished: "2025-11-15"
 dateModified: "2025-11-15"
 author: "xPatLife Team"

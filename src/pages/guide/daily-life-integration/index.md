@@ -6,7 +6,6 @@ keywords: ["daily life Germany", "German culture", "integration Germany", "expat
 ogTitle: "Daily Life and Integration in Germany | xPatLife"
 ogDescription: "Your guide to daily life and integrating into German society"
 ogType: "article"
-canonicalUrl: "https://xpatlife.com/guide/daily-life-integration"
 datePublished: "2025-11-15"
 dateModified: "2025-11-15"
 author: "xPatLife Team"

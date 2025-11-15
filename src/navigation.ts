@@ -50,6 +50,10 @@ export const headerData = {
           href: getPermalink('/guide/financial-legal-matters'),
         },
         {
+          text: 'Tax Declaration',
+          href: getPermalink('/guide/tax-declaration'),
+        },
+        {
           text: 'Practical Resources',
           href: getPermalink('/guide/practical-resources'),
         },
@@ -61,10 +65,6 @@ export const headerData = {
           text: 'Appendices',
           href: getPermalink('/guide/appendices'),
         },
-        {
-          text: 'Tax Declaration',
-          href: getPermalink('/guide/tax-declaration'),
-        },
       ],
     },
     {
@@ -73,14 +73,23 @@ export const headerData = {
     },
     {
       text: 'Tools',
-      href: getPermalink('/tools'),
+      links: [
+        {
+          text: 'Introduction',
+          href: getPermalink('/tools'),
+        },
+        {
+          text: 'Brutto-Netto-Rechner',
+          href: getPermalink('/tools/brutto-netto-rechner'),
+        },
+      ],
     },
     {
       text: 'About',
       href: getPermalink('/about'),
     },
   ],
-  actions: [{ text: 'Download Guide', href: '#', icon: 'tabler:download' }],
+  actions: [{ text: 'Read the Guide', href: getPermalink('/guide'), icon: 'tabler:book' }],
 };
 
 export const footerData = {

@@ -1,6 +1,6 @@
 site:
   name: xPatLife
-  site: 'https://xpatlife.netlify.app/'
+  site: 'https://xpatlife.netlify.app'
   base: '/'
   trailingSlash: false
 
@@ -10,8 +10,8 @@ site:
 metadata:
   title:
     default: xPatLife
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    template: '%s — xPatLife'
+  description: "Your comprehensive guide to living and working in Germany as an expat. Practical advice on immigration, healthcare, housing, employment, and integrating into German life."
   robots:
     index: true
     follow: true

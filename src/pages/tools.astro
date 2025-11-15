@@ -17,10 +17,51 @@ const metadata = {
     subtitle="Practical tools to help you navigate life in Germany more easily."
   />
 
+  <!-- Available Tools Section -->
+  <Content
+    title="Brutto-Netto-Rechner"
+    subtitle="Calculate your net salary from gross income"
+    image={{
+      src: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Salary calculator',
+    }}
+    items={[
+      {
+        title: 'Gross to Net Calculation',
+        description: 'See exactly how much you\'ll take home after taxes and social insurance',
+        icon: 'tabler:calculator',
+      },
+      {
+        title: 'Tax Class Comparison',
+        description: 'Compare different tax classes and their impact on your salary',
+        icon: 'tabler:chart-bar',
+      },
+      {
+        title: 'Detailed Breakdown',
+        description: 'Understand all deductions: income tax, health insurance, pension, and more',
+        icon: 'tabler:list-details',
+      },
+    ]}
+  >
+    <Fragment slot="content">
+      <p class="text-xl text-muted mb-6">
+        Understanding your net salary is crucial when negotiating job offers or planning your budget in Germany. 
+        Our Brutto-Netto-Rechner helps you calculate your take-home pay with all German tax and social insurance deductions.
+      </p>
+      <div class="flex gap-4 mt-6">
+        <a href="/tools/brutto-netto-rechner" class="btn btn-primary">Use Calculator</a>
+      </div>
+    </Fragment>
+  </Content>
+
   <!-- Coming Soon Section -->
   <Content
     title="Tools Coming Soon"
     subtitle="We're building helpful resources for you"
+    image={{
+      src: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Tools and calculators',
+    }}
     items={[
       {
         title: 'Tax Calculator',
@@ -69,6 +110,10 @@ const metadata = {
     title="Available Resources"
     subtitle="Start with these helpful resources"
     isReversed
+    image={{
+      src: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80',
+      alt: 'Resources and guides',
+    }}
     items={[
       {
         title: 'Comprehensive Guide',
@@ -103,6 +148,10 @@ const metadata = {
   <Content
     title="Stay Updated"
     subtitle="Get notified when new tools launch"
+    image={{
+      src: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80',
+      alt: 'Stay connected and updated',
+    }}
   >
     <Fragment slot="content">
       <p class="text-xl text-muted mb-6">
