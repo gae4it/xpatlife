@@ -5,9 +5,17 @@ description: "Privacy policy for xPatLife - Learn how we collect, use, and prote
 layout: "~/layouts/MarkdownLayout.astro"
 ---
 
-# Privacy Policy
-
 **Last updated: November 15, 2025**
+
+## Important Disclaimer
+
+**This website is an educational project for learning web development.** While we respect your privacy and follow data protection principles, please note:
+
+- This is not a commercial or professional service
+- We cannot guarantee absolute data security
+- Hosting is provided by Netlify - see their [privacy policy](https://www.netlify.com/privacy/)
+- We recommend not sharing sensitive personal information on this site
+- Use this website at your own risk
 
 ## Introduction
 

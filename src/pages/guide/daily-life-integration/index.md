@@ -13,8 +13,6 @@ author: "xPatLife Team"
 layout: "~/layouts/MarkdownLayout.astro"
 ---
 
-# Daily Life and Integration in Germany
-
 Successfully integrating into German society goes beyond handling bureaucracy - it's about understanding the culture, building relationships, and feeling at home. This section covers everything from daily routines to social integration.
 
 ## Overview
@@ -56,7 +54,7 @@ Successfully integrating into German society goes beyond handling bureaucracy - 
 - Online banking
 - Money management
 
-[Read more about shopping and daily services →](/guide/daily-life-integration/shopping-services)
+
 
 ### German Culture and Social Norms
 
@@ -79,7 +77,7 @@ Successfully integrating into German society goes beyond handling bureaucracy - 
 - Efficiency and thoroughness
 - Planning and organization
 
-[Read more about German culture →](/guide/daily-life-integration/german-culture)
+
 
 ### Making Friends and Socializing
 
@@ -104,7 +102,7 @@ Successfully integrating into German society goes beyond handling bureaucracy - 
 - Neighborhood gatherings
 - Stammtisch (regular meetups)
 
-[Read more about socializing →](/guide/daily-life-integration/making-friends)
+
 
 ### Integration Programs and Support
 
@@ -125,7 +123,7 @@ Successfully integrating into German society goes beyond handling bureaucracy - 
 - Cultural associations
 - Religious communities
 
-[Read more about integration support →](/guide/daily-life-integration/integration-programs)
+
 
 ## Daily Life Quick Guide
 

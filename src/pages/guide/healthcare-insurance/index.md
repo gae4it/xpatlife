@@ -13,8 +13,6 @@ author: "xPatLife Team"
 layout: "~/layouts/MarkdownLayout.astro"
 ---
 
-# Healthcare and Insurance in Germany
-
 Germany has one of the world's best healthcare systems, offering comprehensive coverage and high-quality medical care. Understanding how health insurance works is crucial - it's mandatory for all residents and essential for your visa/residence permit.
 
 ## Key Principles
@@ -50,7 +48,7 @@ Germany has one of the world's best healthcare systems, offering comprehensive c
 - Comparison factors
 - Switching options
 
-[Read more about choosing health insurance →](/guide/healthcare-insurance/choosing-insurance)
+
 
 ### Using the Healthcare System
 
@@ -72,7 +70,7 @@ Germany has one of the world's best healthcare systems, offering comprehensive c
 - Planned procedures
 - What's covered
 
-[Read more about using healthcare →](/guide/healthcare-insurance/using-healthcare)
+
 
 ### Additional Insurance
 
@@ -96,7 +94,7 @@ Germany has one of the world's best healthcare systems, offering comprehensive c
 - Legal protection insurance
 - Travel insurance
 
-[Read more about additional insurance →](/guide/healthcare-insurance/additional-insurance)
+
 
 ## Public vs. Private: Quick Comparison
 

@@ -4,6 +4,21 @@ Change log and decision history for building the xPatLife website (Astro).
 
 ---
 
+## 2025-01-28
+
+### Removed Broken "Read More" Links
+- Removed 30 "Read more" links from guide section pages that pointed to non-existent sub-pages (causing 404 errors)
+- Affected sections: Housing & Accommodation, Transportation & Mobility, Planning Your Move, Healthcare & Insurance, Employment & Career, Financial & Legal Matters, Education & Language, Daily Life & Integration, Arrival and First Steps
+- Decision: Keep comprehensive content on section index pages without teaser links until sub-pages are created
+
+### Navigation Updates
+- Updated `src/navigation.ts` to reflect xPatLife structure
+- Replaced template navigation with Guide dropdown containing 14 sections: Introduction, Planning Your Move, Arrival and First Steps, Healthcare & Insurance, Housing & Accommodation, Employment & Career, Education & Language, Transportation & Mobility, Daily Life & Integration, Financial & Legal Matters, Practical Resources, Conclusion, Appendices, Tax Declaration
+- Updated footer with xPatLife-specific sections (Guide, Resources, About, Legal)
+- Removed redundant `NavigationMenu.astro` component (navigation now fully controlled by `navigation.ts`)
+
+---
+
 ## 2025-09-09
 
 - **Project initialization**: Created a new Astro project for the xPatLife website.
@@ -57,6 +72,9 @@ Change log and decision history for building the xPatLife website (Astro).
   - Tax Declaration (comprehensive tax filing guide)
 - **Started development server**: Tested site on http://localhost:4323/ - all pages rendering correctly.
 - **Complete navigation structure**: All 14 Guide dropdown menu items now have corresponding pages with rich, SEO-optimized content.
+- **Updated navigation.ts**: Replaced template navigation with xPatLife-specific menu structure (Guide dropdown with 14 sections, Blog, Tools, About).
+- **Updated footer**: Replaced template footer with xPatLife footer (Guide links, Resources, About, Legal sections).
+- **Removed redundant NavigationMenu.astro**: Navigation now handled through navigation.ts configuration.
 
 ---
 

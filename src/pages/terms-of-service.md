@@ -5,9 +5,22 @@ description: "Terms and conditions for using the xPatLife website and services."
 layout: "~/layouts/MarkdownLayout.astro"
 ---
 
-# Terms of Service
-
 **Last updated: November 15, 2025**
+
+## IMPORTANT NOTICE
+
+**This website is an educational project created for web development learning purposes.** By using this site, you acknowledge and accept the following:
+
+- This is NOT a professional service or commercial operation
+- Content may contain errors, omissions, or outdated information
+- We assume NO responsibility for decisions made based on this information
+- You use this website entirely AT YOUR OWN RISK
+
+**For official, legally binding information, always consult:**
+- Official German government agencies (e.g., Ausländerbehörde, Finanzamt, BAMF)
+- Licensed immigration lawyers and consultants
+- Certified tax advisors (Steuerberater)
+- Qualified professionals in relevant fields
 
 ## 1. Acceptance of Terms
 
@@ -39,17 +52,44 @@ You may not:
 - Use automated systems (bots, scrapers) to access the site
 - Frame or embed our content on other websites
 
-## 4. Information Accuracy
+## 4. Information Accuracy and Disclaimers
 
-### 4.1 No Guarantees
+### 4.1 Educational Project Disclaimer
 
-While we strive to provide accurate and up-to-date information:
-- Content is provided "as is" without warranties
-- Information may become outdated due to changing laws and regulations
-- We are not liable for errors or omissions
-- Always verify information with official sources
+**CRITICAL NOTICE:** This website is a personal educational project for learning web development. It is NOT:
+- A professional information service
+- An official government resource
+- A substitute for professional advice
+- Endorsed or verified by any official authority
 
-### 4.2 Not Professional Advice
+### 4.2 No Guarantees or Warranties
+
+**We provide ZERO guarantees regarding:**
+- Accuracy of information provided
+- Completeness of content
+- Currency of regulations or procedures
+- Suitability for your specific situation
+- Outcomes from following any advice or information
+
+**The world changes rapidly.** Immigration laws, tax regulations, healthcare policies, and administrative procedures in Germany change frequently—sometimes with little notice. Information that was accurate yesterday may be incorrect today.
+
+### 4.3 No Responsibility for Errors
+
+**We explicitly disclaim all responsibility for:**
+- Errors, inaccuracies, or omissions in content
+- Outdated information due to regulatory changes
+- Misinterpretation of information by users
+- Decisions made based on website content
+- Financial, legal, or personal consequences of using this information
+- Lost opportunities or damages of any kind
+
+**You are solely responsible for:**
+- Verifying all information with official sources
+- Seeking professional advice for important decisions
+- Understanding that regulations may have changed since content publication
+- Any consequences of actions taken based on website information
+
+### 4.4 Mandatory Verification
 
 Our content is for general information only and does not constitute:
 - Legal advice
@@ -58,7 +98,24 @@ Our content is for general information only and does not constitute:
 - Medical advice
 - Immigration consulting
 
-For specific situations, consult qualified professionals.
+**BEFORE making ANY important decision, you MUST:**
+1. Consult official German government websites and agencies
+2. Seek advice from licensed professionals (lawyers, tax advisors, etc.)
+3. Verify current regulations and requirements
+4. Consider your specific individual circumstances
+5. NOT rely solely on information from this website
+
+### 4.5 Not Professional Advice
+
+Our content is for general information only and does NOT constitute:
+- **Legal advice** - We are not lawyers or legal advisors
+- **Immigration advice** - We are not licensed immigration consultants
+- **Financial advice** - We are not financial planners or advisors
+- **Tax advice** - We are not Steuerberater (tax advisors)
+- **Medical advice** - We are not healthcare professionals
+- **Official guidance** - We are not a government agency
+
+**For all important matters, consult qualified, licensed professionals.**
 
 ## 5. User Conduct
 
@@ -101,11 +158,50 @@ To the fullest extent permitted by law:
 
 ## 10. Limitation of Liability
 
-To the maximum extent permitted by law:
-- We are not liable for any indirect, incidental, or consequential damages
-- We are not liable for loss of profits, data, or opportunities
-- Our total liability shall not exceed €100
-- These limitations apply regardless of the legal theory
+**TO THE MAXIMUM EXTENT PERMITTED BY LAW:**
+
+### 10.1 Complete Disclaimer
+
+We (xPatLife, its owner, contributors, and hosting provider Netlify) are NOT LIABLE for:
+- **Any damages whatsoever**, including but not limited to:
+  - Direct, indirect, incidental, or consequential damages
+  - Loss of profits, income, or opportunities
+  - Loss of data or information
+  - Visa denials or immigration problems
+  - Financial losses or tax issues
+  - Legal problems or penalties
+  - Healthcare or insurance issues
+  - Employment or housing problems
+  - Emotional distress or inconvenience
+  - Any other losses or damages of any kind
+
+### 10.2 Specific Scenarios
+
+We are specifically NOT RESPONSIBLE if:
+- You make a decision based on outdated information
+- Regulations changed after content was published
+- You misunderstood or misapplied information
+- Official requirements differ from what we described
+- You fail to verify information with authorities
+- You don't seek professional advice
+- Information was incomplete or inaccurate
+- Technical issues prevented access to content
+- The website is unavailable or malfunctions
+
+### 10.3 Maximum Liability Cap
+
+Even if liability is found: Our total liability shall NEVER exceed €0 (zero euros).
+
+### 10.4 Hosting Provider
+
+**Netlify Disclaimer:** We are not responsible for any issues related to our hosting provider (Netlify), including but not limited to:
+- Server downtime or outages
+- Data breaches or security issues
+- Technical malfunctions
+- Content delivery failures
+- Any hosting-related problems
+
+For Netlify's terms and policies, see: [https://www.netlify.com/legal/](https://www.netlify.com/legal/)
 
 ## 11. Indemnification
 

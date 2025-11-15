@@ -13,8 +13,6 @@ author: "xPatLife Team"
 layout: "~/layouts/MarkdownLayout.astro"
 ---
 
-# Education and Language Learning in Germany
-
 Germany offers excellent education opportunities from kindergarten through university, with most public education free of charge. Learning German is essential for integration and accessing opportunities. This section covers education options and language learning resources.
 
 ## Overview
@@ -56,7 +54,7 @@ Germany offers excellent education opportunities from kindergarten through unive
 - Language requirements
 - Support for non-German speakers
 
-[Read more about schools →](/guide/education-language/school-system)
+
 
 ### Higher Education
 
@@ -78,7 +76,7 @@ Germany offers excellent education opportunities from kindergarten through unive
 - Scholarships (DAAD, etc.)
 - Student jobs and regulations
 
-[Read more about higher education →](/guide/education-language/higher-education)
+
 
 ### Learning German
 
@@ -107,7 +105,7 @@ Germany offers excellent education opportunities from kindergarten through unive
 - telc - Practical language skills
 - Required levels for visa/citizenship
 
-[Read more about learning German →](/guide/education-language/learning-german)
+
 
 ## German Language Learning
 

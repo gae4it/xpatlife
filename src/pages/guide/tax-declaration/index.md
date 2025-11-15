@@ -13,8 +13,6 @@ author: "xPatLife Team"
 layout: "~/layouts/MarkdownLayout.astro"
 ---
 
-# Tax Declaration Guide for Expats in Germany
-
 Filing a German tax return (Steuererklärung) can seem daunting, but it's usually worth it - the average refund is over €1,000! This comprehensive guide walks you through the process, explains deductions, and helps you maximize your refund.
 
 ## Why File a Tax Return?

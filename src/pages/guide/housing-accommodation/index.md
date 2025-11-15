@@ -13,8 +13,6 @@ author: "xPatLife Team"
 layout: "~/layouts/MarkdownLayout.astro"
 ---
 
-# Housing and Accommodation in Germany
-
 Finding housing in Germany can be one of the most challenging aspects of relocating, especially in major cities. This section provides strategies, resources, and insider knowledge to help you navigate the German rental market successfully.
 
 ## The German Housing Market
@@ -56,7 +54,7 @@ Finding housing in Germany can be one of the most challenging aspects of relocat
 - Schufa requirement
 - Deposit requirements
 
-[Read more about finding an apartment →](/guide/housing-accommodation/finding-apartment)
+
 
 ### Understanding Rental Contracts
 
@@ -78,7 +76,7 @@ Finding housing in Germany can be one of the most challenging aspects of relocat
 - Rent increases
 - Tenant rights and obligations
 
-[Read more about rental contracts →](/guide/housing-accommodation/rental-contracts)
+
 
 ### Setting Up Your Home
 
@@ -99,7 +97,7 @@ Finding housing in Germany can be one of the most challenging aspects of relocat
 - Building rules (Hausordnung)
 - Neighbor etiquette
 
-[Read more about setting up your home →](/guide/housing-accommodation/setting-up-home)
+
 
 ## Quick Tips for Apartment Hunting
 
