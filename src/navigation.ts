@@ -113,13 +113,7 @@ export const footerData = {
         { text: 'Practical Resources', href: getPermalink('/guide/practical-resources') },
         { text: 'Tax Declaration Guide', href: getPermalink('/guide/tax-declaration') },
         { text: 'Appendices', href: getPermalink('/guide/appendices') },
-      ],
-    },
-    {
-      title: 'About',
-      links: [
         { text: 'About xPatLife', href: getPermalink('/about') },
-        { text: 'Contact', href: getPermalink('/contact') },
       ],
     },
     {

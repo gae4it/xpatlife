@@ -117,9 +117,6 @@
 </style>
 
 <script>
-  // Declare gtag as any to avoid TypeScript errors
-  declare const gtag: any;
-
   // Cookie consent logic
   const COOKIE_CONSENT_KEY = 'xpatlife_cookie_consent';
   const cookieBanner = document.getElementById('cookie-consent');
@@ -132,9 +129,9 @@
     const consent = localStorage.getItem(COOKIE_CONSENT_KEY);
     if (!consent) {
       cookieBanner?.classList.remove('hidden');
-    } else if (consent === 'all' && typeof gtag !== 'undefined') {
+    } else if (consent === 'all' && typeof window !== 'undefined' && typeof (window as any).gtag === 'function') {
       // Re-apply consent on page load if previously accepted
-      gtag('consent', 'update', {
+      (window as any).gtag('consent', 'update', {
         'ad_storage': 'granted',
         'ad_user_data': 'granted',
         'ad_personalization': 'granted',
@@ -151,8 +148,8 @@
     // Update Google Consent Mode based on user choice
     if (choice === 'all') {
       // Enable all cookies (analytics, tracking, etc.)
-      if (typeof gtag !== 'undefined') {
-        gtag('consent', 'update', {
+      if (typeof window !== 'undefined' && typeof (window as any).gtag === 'function') {
+        (window as any).gtag('consent', 'update', {
           'ad_storage': 'granted',
           'ad_user_data': 'granted',
           'ad_personalization': 'granted',
