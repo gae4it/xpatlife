@@ -1,0 +1,159 @@
+---
+// Simple GDPR-compliant cookie consent banner
+// Can be enhanced with a third-party library later
+---
+
+<div id="cookie-consent" class="cookie-consent hidden">
+  <div class="cookie-consent-container">
+    <div class="cookie-consent-content">
+      <p class="cookie-consent-text">
+        We use cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept All", you consent to our use of cookies. 
+        <a href="/cookie-policy" class="cookie-consent-link">Learn more</a>
+      </p>
+      <div class="cookie-consent-buttons">
+        <button id="accept-all" class="btn btn-primary">Accept All</button>
+        <button id="accept-necessary" class="btn btn-secondary">Necessary Only</button>
+        <button id="reject-all" class="btn btn-tertiary">Reject All</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .cookie-consent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.95);
+    color: white;
+    padding: 1.5rem;
+    z-index: 9999;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .cookie-consent.hidden {
+    display: none;
+  }
+  
+  .cookie-consent-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .cookie-consent-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .cookie-consent-content {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  
+  .cookie-consent-text {
+    margin: 0;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+  
+  .cookie-consent-link {
+    color: #60a5fa;
+    text-decoration: underline;
+  }
+  
+  .cookie-consent-link:hover {
+    color: #93c5fd;
+  }
+  
+  .cookie-consent-buttons {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+  
+  .btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .btn-primary {
+    background: #2563eb;
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background: #1d4ed8;
+  }
+  
+  .btn-secondary {
+    background: #6b7280;
+    color: white;
+  }
+  
+  .btn-secondary:hover {
+    background: #4b5563;
+  }
+  
+  .btn-tertiary {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+  }
+  
+  .btn-tertiary:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+</style>
+
+<script>
+  // Cookie consent logic
+  const COOKIE_CONSENT_KEY = 'xpatlife_cookie_consent';
+  const cookieBanner = document.getElementById('cookie-consent');
+  const acceptAllBtn = document.getElementById('accept-all');
+  const acceptNecessaryBtn = document.getElementById('accept-necessary');
+  const rejectAllBtn = document.getElementById('reject-all');
+
+  // Check if user has already made a choice
+  function checkConsent() {
+    const consent = localStorage.getItem(COOKIE_CONSENT_KEY);
+    if (!consent) {
+      cookieBanner?.classList.remove('hidden');
+    }
+  }
+
+  // Save consent choice
+  function saveConsent(choice: string) {
+    localStorage.setItem(COOKIE_CONSENT_KEY, choice);
+    cookieBanner?.classList.add('hidden');
+    
+    // Here you can enable/disable analytics based on the choice
+    if (choice === 'all') {
+      // Enable all cookies (analytics, tracking, etc.)
+      console.log('All cookies accepted');
+    } else if (choice === 'necessary') {
+      // Enable only necessary cookies
+      console.log('Only necessary cookies accepted');
+    } else {
+      // Disable all non-necessary cookies
+      console.log('All cookies rejected');
+    }
+  }
+
+  // Event listeners
+  acceptAllBtn?.addEventListener('click', () => saveConsent('all'));
+  acceptNecessaryBtn?.addEventListener('click', () => saveConsent('necessary'));
+  rejectAllBtn?.addEventListener('click', () => saveConsent('none'));
+
+  // Check on page load
+  checkConsent();
+</script>
