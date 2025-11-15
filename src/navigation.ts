@@ -1,183 +1,136 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { getPermalink, getBlogPermalink } from './utils/permalinks';
 
 export const headerData = {
   links: [
     {
       text: 'Home',
-      links: [
-        {
-          text: 'SaaS',
-          href: getPermalink('/homes/saas'),
-        },
-        {
-          text: 'Startup',
-          href: getPermalink('/homes/startup'),
-        },
-        {
-          text: 'Mobile App',
-          href: getPermalink('/homes/mobile-app'),
-        },
-        {
-          text: 'Personal',
-          href: getPermalink('/homes/personal'),
-        },
-      ],
+      href: getPermalink('/'),
     },
     {
-      text: 'Pages',
+      text: 'Guide',
       links: [
         {
-          text: 'Features (Anchor Link)',
-          href: getPermalink('/#features'),
+          text: 'Introduction',
+          href: getPermalink('/guide/introduction'),
         },
         {
-          text: 'Services',
-          href: getPermalink('/services'),
+          text: 'Planning Your Move',
+          href: getPermalink('/guide/planning-your-move'),
         },
         {
-          text: 'Pricing',
-          href: getPermalink('/pricing'),
+          text: 'Arrival and First Steps',
+          href: getPermalink('/guide/arrival-and-first-steps'),
         },
         {
-          text: 'About us',
-          href: getPermalink('/about'),
+          text: 'Healthcare & Insurance',
+          href: getPermalink('/guide/healthcare-insurance'),
         },
         {
-          text: 'Contact',
-          href: getPermalink('/contact'),
+          text: 'Housing & Accommodation',
+          href: getPermalink('/guide/housing-accommodation'),
         },
         {
-          text: 'Terms',
-          href: getPermalink('/terms'),
+          text: 'Employment & Career',
+          href: getPermalink('/guide/employment-career'),
         },
         {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
-        },
-      ],
-    },
-    {
-      text: 'Landing',
-      links: [
-        {
-          text: 'Lead Generation',
-          href: getPermalink('/landing/lead-generation'),
+          text: 'Education & Language',
+          href: getPermalink('/guide/education-language'),
         },
         {
-          text: 'Long-form Sales',
-          href: getPermalink('/landing/sales'),
+          text: 'Transportation & Mobility',
+          href: getPermalink('/guide/transportation-mobility'),
         },
         {
-          text: 'Click-Through',
-          href: getPermalink('/landing/click-through'),
+          text: 'Daily Life & Integration',
+          href: getPermalink('/guide/daily-life-integration'),
         },
         {
-          text: 'Product Details (or Services)',
-          href: getPermalink('/landing/product'),
+          text: 'Financial & Legal Matters',
+          href: getPermalink('/guide/financial-legal-matters'),
         },
         {
-          text: 'Coming Soon or Pre-Launch',
-          href: getPermalink('/landing/pre-launch'),
+          text: 'Practical Resources',
+          href: getPermalink('/guide/practical-resources'),
         },
         {
-          text: 'Subscription',
-          href: getPermalink('/landing/subscription'),
+          text: 'Conclusion',
+          href: getPermalink('/guide/conclusion'),
+        },
+        {
+          text: 'Appendices',
+          href: getPermalink('/guide/appendices'),
+        },
+        {
+          text: 'Tax Declaration',
+          href: getPermalink('/guide/tax-declaration'),
         },
       ],
     },
     {
       text: 'Blog',
-      links: [
-        {
-          text: 'Blog List',
-          href: getBlogPermalink(),
-        },
-        {
-          text: 'Article',
-          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
-        },
-        {
-          text: 'Article (with MDX)',
-          href: getPermalink('markdown-elements-demo-post', 'post'),
-        },
-        {
-          text: 'Category Page',
-          href: getPermalink('tutorials', 'category'),
-        },
-        {
-          text: 'Tag Page',
-          href: getPermalink('astro', 'tag'),
-        },
-      ],
+      href: getBlogPermalink(),
     },
     {
-      text: 'Widgets',
-      href: '#',
+      text: 'Tools',
+      href: getPermalink('/tools'),
+    },
+    {
+      text: 'About',
+      href: getPermalink('/about'),
     },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
+  actions: [{ text: 'Download Guide', href: '#', icon: 'tabler:download' }],
 };
 
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: 'Guide',
       links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
+        { text: 'Introduction', href: getPermalink('/guide/introduction') },
+        { text: 'Planning Your Move', href: getPermalink('/guide/planning-your-move') },
+        { text: 'Arrival & First Steps', href: getPermalink('/guide/arrival-and-first-steps') },
+        { text: 'Healthcare & Insurance', href: getPermalink('/guide/healthcare-insurance') },
+        { text: 'Housing', href: getPermalink('/guide/housing-accommodation') },
+        { text: 'Employment', href: getPermalink('/guide/employment-career') },
       ],
     },
     {
-      title: 'Platform',
+      title: 'Resources',
       links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
+        { text: 'Blog', href: getBlogPermalink() },
+        { text: 'Tools', href: getPermalink('/tools') },
+        { text: 'Practical Resources', href: getPermalink('/guide/practical-resources') },
+        { text: 'Tax Declaration Guide', href: getPermalink('/guide/tax-declaration') },
+        { text: 'Appendices', href: getPermalink('/guide/appendices') },
       ],
     },
     {
-      title: 'Support',
+      title: 'About',
       links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
+        { text: 'About xPatLife', href: getPermalink('/about') },
+        { text: 'Contact', href: getPermalink('/contact') },
       ],
     },
     {
-      title: 'Company',
+      title: 'Legal',
       links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
+        { text: 'Disclaimer', href: getPermalink('/disclaimer') },
+        { text: 'Privacy Policy', href: getPermalink('/privacy-policy') },
+        { text: 'Cookie Policy', href: getPermalink('/cookie-policy') },
+        { text: 'Terms of Service', href: getPermalink('/terms-of-service') },
+        { text: 'Legal Notice', href: getPermalink('/legal-notice') },
       ],
     },
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    { text: 'Disclaimer', href: getPermalink('/disclaimer') },
+    { text: 'Terms', href: getPermalink('/terms-of-service') },
+    { text: 'Privacy Policy', href: getPermalink('/privacy-policy') },
   ],
-  socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
-  ],
+  socialLinks: [],
   footNote: `
-    <img class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm" src="https://onwidget.com/favicon/favicon-32x32.png" alt="onWidget logo" loading="lazy"></img>
-    Made by <a class="text-blue-600 underline dark:text-muted" href="https://onwidget.com/"> onWidget</a> · All rights reserved.
+    ⚠️ <strong>Educational Project:</strong> This website is for learning purposes only. Information may be inaccurate or outdated. <a href="/disclaimer" class="underline">Read full disclaimer</a> <br> Made with ❤️ for expats in Germany · xPatLife ${new Date().getFullYear()} · All rights reserved.
   `,
 };

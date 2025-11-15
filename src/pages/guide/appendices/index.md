@@ -13,8 +13,6 @@ author: "xPatLife Team"
 layout: "~/layouts/MarkdownLayout.astro"
 ---
 
-# Appendices: Forms, Templates & Checklists
-
 This section provides practical tools, checklists, and templates to help you navigate life in Germany. Use these resources for planning, organization, and reference.
 
 ## Moving Checklists

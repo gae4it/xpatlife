@@ -13,8 +13,6 @@ author: "xPatLife Team"
 layout: "~/layouts/MarkdownLayout.astro"
 ---
 
-# Arrival and First Steps in Germany
-
 Congratulations on arriving in Germany! The first few weeks are crucial for setting yourself up properly. This section guides you through all the essential steps you need to take immediately after arrival.
 
 ## Priority Timeline
@@ -51,7 +49,7 @@ Congratulations on arriving in Germany! The first few weeks are crucial for sett
 - Required appointments and documents
 - Processing times
 
-[Read more about registration and bureaucracy →](/guide/arrival-and-first-steps/registration-bureaucracy)
+
 
 ### Essential Services
 
@@ -72,7 +70,7 @@ Congratulations on arriving in Germany! The first few weeks are crucial for sett
 - Water and heating
 - Rundfunkbeitrag (TV/radio fee)
 
-[Read more about essential services →](/guide/arrival-and-first-steps/essential-services)
+
 
 ### Temporary Accommodation
 
@@ -87,7 +85,7 @@ Congratulations on arriving in Germany! The first few weeks are crucial for sett
 - Anmeldung possibility
 - Duration and flexibility
 
-[Read more about temporary accommodation →](/guide/arrival-and-first-steps/temporary-accommodation)
+
 
 ### Getting Your Bearings
 

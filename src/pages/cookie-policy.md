@@ -5,8 +5,6 @@ description: "Learn about how xPatLife uses cookies and similar tracking technol
 layout: "~/layouts/MarkdownLayout.astro"
 ---
 
-# Cookie Policy
-
 **Last updated: November 15, 2025**
 
 ## What Are Cookies?

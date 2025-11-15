@@ -13,8 +13,6 @@ author: "xPatLife Team"
 layout: "~/layouts/MarkdownLayout.astro"
 ---
 
-# Financial and Legal Matters in Germany
-
 Understanding German financial and legal systems is crucial for long-term success. This section covers banking, taxes, contracts, legal rights, and financial planning specific to expats in Germany.
 
 ## Overview
@@ -61,7 +59,7 @@ Understanding German financial and legal systems is crucial for long-term succes
 - Mortgages for expats
 - Building creditworthiness
 
-[Read more about banking →](/guide/financial-legal-matters/banking)
+
 
 ### Understanding German Taxes
 
@@ -90,7 +88,7 @@ Understanding German financial and legal systems is crucial for long-term succes
 - Property tax
 - Inheritance tax
 
-[Read more about taxes →](/guide/financial-legal-matters/taxes)
+
 
 [Read detailed tax declaration guide →](/guide/tax-declaration)
 
@@ -116,7 +114,7 @@ Understanding German financial and legal systems is crucial for long-term succes
 - Consumer protection agencies
 - Tenant associations
 
-[Read more about contracts →](/guide/financial-legal-matters/contracts)
+
 
 ### Legal Rights and Protections
 
@@ -144,7 +142,7 @@ Understanding German financial and legal systems is crucial for long-term succes
 - Consumer protection centers
 - Dispute resolution
 
-[Read more about legal rights →](/guide/financial-legal-matters/legal-rights)
+
 
 ### Financial Planning
 
@@ -173,7 +171,7 @@ Understanding German financial and legal systems is crucial for long-term succes
 - Power of attorney
 - International considerations
 
-[Read more about financial planning →](/guide/financial-legal-matters/financial-planning)
+
 
 ## Banking Quick Guide
 

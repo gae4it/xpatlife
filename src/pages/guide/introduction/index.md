@@ -13,8 +13,6 @@ author: "xPatLife Team"
 layout: "~/layouts/MarkdownLayout.astro"
 ---
 
-# Introduction to Living in Germany
-
 Welcome to xPatLife! This guide is designed to help you navigate every aspect of living and working in Germany, from planning your move to integrating into German society.
 
 ## About This Guide

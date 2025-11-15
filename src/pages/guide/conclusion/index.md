@@ -13,8 +13,6 @@ author: "xPatLife Team"
 layout: "~/layouts/MarkdownLayout.astro"
 ---
 
-# Conclusion: Your Journey in Germany
-
 Congratulations on making it through this comprehensive guide! Whether you're still planning your move, have just arrived, or are already settling into life in Germany, you've taken an important step by educating yourself about what to expect.
 
 ## Reflecting on the Journey

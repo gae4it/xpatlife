@@ -13,8 +13,6 @@ author: "xPatLife Team"
 layout: "~/layouts/MarkdownLayout.astro"
 ---
 
-# Employment and Career in Germany
-
 Germany offers excellent career opportunities with strong worker protections, competitive salaries, and work-life balance. This section guides you through finding employment, understanding workplace culture, and building your career in Germany.
 
 ## Overview
@@ -57,7 +55,7 @@ Germany offers excellent career opportunities with strong worker protections, co
 - Job seeker visa
 - Recognition of qualifications
 
-[Read more about finding employment →](/guide/employment-career/finding-employment)
+
 
 ### German Workplace Culture
 
@@ -81,7 +79,7 @@ Germany offers excellent career opportunities with strong worker protections, co
 - Industry variations
 - Language learning support
 
-[Read more about workplace culture →](/guide/employment-career/workplace-culture)
+
 
 ### Rights and Benefits
 
@@ -109,7 +107,7 @@ Germany offers excellent career opportunities with strong worker protections, co
 - Unemployment insurance
 - Healthcare coverage
 
-[Read more about rights and benefits →](/guide/employment-career/rights-benefits)
+
 
 ## Job Search Resources
 

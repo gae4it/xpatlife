@@ -18,8 +18,6 @@ author: "xPatLife Team"
 layout: "~/layouts/MarkdownLayout.astro"
 ---
 
-# Living and Working in Germany: A Complete Guide for Expats
-
 Welcome to the xPatLife comprehensive guide for expats in Germany. Whether you're planning your move, just arrived, or have been here for a while, this guide provides practical, actionable information to help you navigate every aspect of life in Germany.
 
 ## What You'll Find in This Guide

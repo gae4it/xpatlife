@@ -13,8 +13,6 @@ author: "xPatLife Team"
 layout: "~/layouts/MarkdownLayout.astro"
 ---
 
-# Practical Resources and References
-
 Having quick access to important contacts, services, and resources makes life in Germany much easier. This section provides essential information you'll reference throughout your time in Germany.
 
 ## Emergency Contacts

@@ -13,8 +13,6 @@ author: "xPatLife Team"
 layout: "~/layouts/MarkdownLayout.astro"
 ---
 
-# Transportation and Mobility in Germany
-
 Germany has one of the best transportation systems in the world, offering efficient public transit, excellent roads, and extensive cycling infrastructure. This section helps you navigate your transportation options and get around with ease.
 
 ## Overview
@@ -53,7 +51,7 @@ Most German cities are designed for public transit and cycling. In major cities,
 - Zone systems
 - Fines for riding without a valid ticket
 
-[Read more about public transportation →](/guide/transportation-mobility/public-transport)
+
 
 ### Deutsche Bahn and Train Travel
 
@@ -75,7 +73,7 @@ Most German cities are designed for public transit and cycling. In major cities,
 - WiFi and services
 - Night trains
 
-[Read more about train travel →](/guide/transportation-mobility/train-travel)
+
 
 ### Driving in Germany
 
@@ -98,7 +96,7 @@ Most German cities are designed for public transit and cycling. In major cities,
 - Parking regulations
 - Winter tire requirements
 
-[Read more about driving →](/guide/transportation-mobility/driving)
+
 
 ### Cycling
 
@@ -118,7 +116,7 @@ Most German cities are designed for public transit and cycling. In major cities,
 - Traffic regulations
 - Liability and insurance
 
-[Read more about cycling →](/guide/transportation-mobility/cycling)
+
 
 ## Public Transport Quick Guide
 
