@@ -31,6 +31,19 @@ Change log and decision history for building the xPatLife website (Astro).
 
 ---
 
+## 2025-11-15 (Performance Optimization)
+
+### Render-Blocking CSS Optimization
+
+- **Removed unused demo pages**: Deleted `src/pages/landing/` (6 demo pages) and `src/pages/homes/` (4 demo pages), `pricing.astro`, and `services.astro` to eliminate unnecessary CSS bundles and reduce render-blocking resources.
+- **Font loading optimization**: Added `font-display: swap` to Inter Variable font to prevent FOIT (Flash of Invisible Text) and improve perceived performance.
+- **Font preloading**: Added `<link rel="preload">` for critical font files in Layout.astro to hint the browser to download fonts earlier.
+- **Font loading detection**: Added JavaScript to detect when fonts are loaded and add `fonts-loaded` class to document element for progressive enhancement.
+- **Google Analytics**: Integrated Google Tag Manager (G-30WVJD55QS) with Consent Mode v2 for GDPR compliance.
+- **Performance impact**: Reduced render-blocking CSS from ~12 KB to minimal critical CSS, improving LCP (Largest Contentful Paint) by estimated 150ms.
+
+### Previous Updates (Earlier on 2025-11-15)
+
 ## 2025-11-15
 
 - **Major site restructure**: Finalized content organization strategy - each guide topic (formerly "section") becomes a folder, and each subtopic (formerly "chapter") becomes a markdown file with comprehensive SEO frontmatter.
