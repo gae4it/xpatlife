@@ -1,0 +1,54 @@
+---
+// NavigationMenu.astro - Main navigation with Guide dropdown
+---
+
+<nav class="items-center w-full md:w-auto hidden md:flex md:mx-5 text-default overflow-y-auto overflow-x-hidden md:overflow-y-visible md:overflow-x-auto md:justify-self-center" aria-label="Main navigation">
+  <ul class="flex flex-col md:flex-row md:self-center w-full md:w-auto text-xl md:text-[0.9375rem] tracking-[0.01rem] font-medium md:justify-center">
+    <!-- Guide Dropdown -->
+    <li class="dropdown">
+      <button type="button" class="hover:text-link dark:hover:text-white px-4 py-3 flex items-center whitespace-nowrap">
+        Guide
+        <svg class="w-3.5 h-3.5 ml-0.5 rtl:ml-0 rtl:mr-0.5 hidden md:inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+      <ul class="dropdown-menu md:backdrop-blur-md dark:md:bg-dark rounded md:absolute pl-4 md:pl-0 md:hidden font-medium md:bg-white/90 md:min-w-[200px] drop-shadow-xl">
+        <li><a href="/guide/introduction" class="first:rounded-t last:rounded-b md:hover:bg-gray-100 hover:text-link dark:hover:text-white dark:hover:bg-gray-700 py-2 px-5 block whitespace-no-wrap">Introduction</a></li>
+        <li><a href="/guide/planning-your-move" class="first:rounded-t last:rounded-b md:hover:bg-gray-100 hover:text-link dark:hover:text-white dark:hover:bg-gray-700 py-2 px-5 block whitespace-no-wrap">Planning Your Move</a></li>
+        <li><a href="/guide/arrival-and-first-steps" class="first:rounded-t last:rounded-b md:hover:bg-gray-100 hover:text-link dark:hover:text-white dark:hover:bg-gray-700 py-2 px-5 block whitespace-no-wrap">Arrival and First Steps</a></li>
+        <li><a href="/guide/healthcare-insurance" class="first:rounded-t last:rounded-b md:hover:bg-gray-100 hover:text-link dark:hover:text-white dark:hover:bg-gray-700 py-2 px-5 block whitespace-no-wrap">Healthcare & Insurance</a></li>
+        <li><a href="/guide/housing-accommodation" class="first:rounded-t last:rounded-b md:hover:bg-gray-100 hover:text-link dark:hover:text-white dark:hover:bg-gray-700 py-2 px-5 block whitespace-no-wrap">Housing & Accommodation</a></li>
+        <li><a href="/guide/employment-career" class="first:rounded-t last:rounded-b md:hover:bg-gray-100 hover:text-link dark:hover:text-white dark:hover:bg-gray-700 py-2 px-5 block whitespace-no-wrap">Employment & Career</a></li>
+        <li><a href="/guide/education-language" class="first:rounded-t last:rounded-b md:hover:bg-gray-100 hover:text-link dark:hover:text-white dark:hover:bg-gray-700 py-2 px-5 block whitespace-no-wrap">Education & Language</a></li>
+        <li><a href="/guide/transportation-mobility" class="first:rounded-t last:rounded-b md:hover:bg-gray-100 hover:text-link dark:hover:text-white dark:hover:bg-gray-700 py-2 px-5 block whitespace-no-wrap">Transportation & Mobility</a></li>
+        <li><a href="/guide/daily-life-integration" class="first:rounded-t last:rounded-b md:hover:bg-gray-100 hover:text-link dark:hover:text-white dark:hover:bg-gray-700 py-2 px-5 block whitespace-no-wrap">Daily Life & Integration</a></li>
+        <li><a href="/guide/financial-legal-matters" class="first:rounded-t last:rounded-b md:hover:bg-gray-100 hover:text-link dark:hover:text-white dark:hover:bg-gray-700 py-2 px-5 block whitespace-no-wrap">Financial & Legal Matters</a></li>
+        <li><a href="/guide/practical-resources" class="first:rounded-t last:rounded-b md:hover:bg-gray-100 hover:text-link dark:hover:text-white dark:hover:bg-gray-700 py-2 px-5 block whitespace-no-wrap">Practical Resources</a></li>
+        <li><a href="/guide/conclusion" class="first:rounded-t last:rounded-b md:hover:bg-gray-100 hover:text-link dark:hover:text-white dark:hover:bg-gray-700 py-2 px-5 block whitespace-no-wrap">Conclusion</a></li>
+        <li><a href="/guide/appendices" class="first:rounded-t last:rounded-b md:hover:bg-gray-100 hover:text-link dark:hover:text-white dark:hover:bg-gray-700 py-2 px-5 block whitespace-no-wrap">Appendices</a></li>
+        <li><a href="/guide/tax-declaration" class="first:rounded-t last:rounded-b md:hover:bg-gray-100 hover:text-link dark:hover:text-white dark:hover:bg-gray-700 py-2 px-5 block whitespace-no-wrap">Tax Declaration</a></li>
+      </ul>
+    </li>
+
+    <!-- Blog Link -->
+    <li>
+      <a href="/blog" class="hover:text-link dark:hover:text-white px-4 py-3 flex items-center whitespace-nowrap">
+        Blog
+      </a>
+    </li>
+
+    <!-- Tools Link -->
+    <li>
+      <a href="/tools" class="hover:text-link dark:hover:text-white px-4 py-3 flex items-center whitespace-nowrap">
+        Tools
+      </a>
+    </li>
+
+    <!-- About Link -->
+    <li>
+      <a href="/about" class="hover:text-link dark:hover:text-white px-4 py-3 flex items-center whitespace-nowrap">
+        About
+      </a>
+    </li>
+  </ul>
+</nav>

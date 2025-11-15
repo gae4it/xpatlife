@@ -1,92 +1,101 @@
-# 🚀 AstroWind
+# 🌍 xPatLife
 
-<img src="https://raw.githubusercontent.com/onwidget/.github/main/resources/astrowind/lighthouse-score.png" align="right"
-     alt="AstroWind Lighthouse Score" width="100" height="358">
+**xPatLife: Living and Working in Germany** - A comprehensive, SEO-optimized guide for expats built with **[Astro 5.0](https://astro.build/) + [Tailwind CSS](https://tailwindcss.com/)**.
 
-🌟 _Most *starred* & *forked* Astro theme in 2022, 2023 & 2024_. 🌟
+This website transforms a 170-page book into an accessible, modern web experience, providing practical and legal guidance for expats navigating life in Germany.
 
-**AstroWind** is a free and open-source template to make your website using **[Astro 5.0](https://astro.build/) + [Tailwind CSS](https://tailwindcss.com/)**. Ready to start a new project and designed taking into account web best practices.
+## ✨ Features
 
-- ✅ **Production-ready** scores in **PageSpeed Insights** reports.
-- ✅ Integration with **Tailwind CSS** supporting **Dark mode** and **_RTL_**.
-- ✅ **Fast and SEO friendly blog** with automatic **RSS feed**, **MDX** support, **Categories & Tags**, **Social Share**, ...
-- ✅ **Image Optimization** (using new **Astro Assets** and **Unpic** for Universal image CDN).
-- ✅ Generation of **project sitemap** based on your routes.
-- ✅ **Open Graph tags** for social media sharing.
-- ✅ **Analytics** built-in Google Analytics, and Splitbee integration.
-
-<br>
-
-![AstroWind Theme Screenshot](https://raw.githubusercontent.com/onwidget/.github/main/resources/astrowind/screenshot-astrowind-1.0.png)
-
-[![onWidget](https://custom-icon-badges.demolab.com/badge/made%20by%20-onWidget-556bf2?style=flat-square&logo=onwidget&logoColor=white&labelColor=101827)](https://onwidget.com)
-[![License](https://img.shields.io/github/license/onwidget/astrowind?style=flat-square&color=dddddd&labelColor=000000)](https://github.com/onwidget/astrowind/blob/main/LICENSE.md)
-[![Maintained](https://img.shields.io/badge/maintained%3F-yes-brightgreen.svg?style=flat-square)](https://github.com/onwidget)
-[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/onwidget/astrowind#contributing)
-[![Known Vulnerabilities](https://snyk.io/test/github/onwidget/astrowind/badge.svg?style=flat-square)](https://snyk.io/test/github/onwidget/astrowind)
-[![Stars](https://img.shields.io/github/stars/onwidget/astrowind.svg?style=social&label=stars&maxAge=86400&color=ff69b4)](https://github.com/onwidget/astrowind)
-[![Forks](https://img.shields.io/github/forks/onwidget/astrowind.svg?style=social&label=forks&maxAge=86400&color=ff69b4)](https://github.com/onwidget/astrowind)
+- ✅ **Comprehensive Guide Structure** - Organized content covering all aspects of expat life in Germany
+- ✅ **SEO-First Approach** - Rich frontmatter, Open Graph, Twitter Cards, JSON-LD structured data
+- ✅ **Modern Navigation** - Two-level dropdown menu with intuitive topic organization
+- ✅ **GDPR Compliant** - Cookie consent, privacy policy, and all required EU legal pages
+- ✅ **Performance Optimized** - Fast loading, image optimization, and excellent Core Web Vitals
+- ✅ **Accessibility** - Semantic HTML, ARIA roles, keyboard navigation, screen reader friendly
+- ✅ **Theme Toggle** - Dark/light mode support
+- ✅ **Blog Integration** - Dynamic blog with RSS feed for updates and articles
+- ✅ **Sitemap & RSS** - Automatic generation for search engines and feed readers
+- ✅ **Mobile Responsive** - Optimized for all devices
 
 <br>
 
-<details open>
-<summary>Table of Contents</summary>
+## 📚 Content Structure
 
-- [Demo](#demo)
-- [Upcoming: AstroWind 2.0 – We Need Your Vision!](#-upcoming-astrowind-20--we-need-your-vision)
-- [TL;DR](#tldr)
-- [Getting started](#getting-started)
-  - [Project structure](#project-structure)
-  - [Commands](#commands)
-  - [Configuration](#configuration)
-  - [Deploy](#deploy)
-- [Frequently Asked Questions](#frequently-asked-questions)
-- [Related Projects](#related-projects)
-- [Contributing](#contributing)
-- [Acknowledgements](#acknowledgements)
-- [License](#license)
+The website is organized into the following main sections:
 
-</details>
+### Guide (Main Content)
+- **Introduction** - About the book, target audience, expat journey overview
+- **Planning Your Move** - Immigration requirements, visas, financial preparation
+- **Arrival and First Steps** - Registration, tax ID, essential services
+- **Healthcare & Insurance** - Health insurance, medical situations, insurance types
+- **Housing & Accommodation** - Finding homes, rental laws, tenant rights
+- **Employment & Career** - Job searching, working in Germany, entrepreneurship
+- **Education & Language** - German education system, language learning
+- **Transportation & Mobility** - Public transport, driving, car ownership
+- **Daily Life & Integration** - Cultural integration, family life, leisure activities
+- **Financial & Legal Matters** - Taxes, legal rights, long-term planning
+- **Practical Resources** - Emergency situations, document management, directory
+- **Conclusion** - Long-term perspective and final tips
+- **Appendices** - Bureaucratic terms, checklists, regional differences
+- **Tax Declaration** - Complete guide to Steuererklärung
 
-<br>
+### Additional Pages
+- **Blog** - Articles, updates, and expat stories
+- **Tools** - Calculators and interactive resources (planned)
+- **About** - About xPatLife and the team
 
-## Demo
-
-📌 [https://astrowind.vercel.app/](https://astrowind.vercel.app/)
-
-<br>
-
-## 🔔 Upcoming: AstroWind 2.0 – We Need Your Vision!
-
-We're embarking on an exciting journey with **AstroWind 2.0**, and we want you to be a part of it! We're currently taking the first steps in developing this new version and your insights are invaluable. Join the discussion and share your feedback, ideas, and suggestions to help shape the future of **AstroWind**. Let's make **AstroWind 2.0** even better, together!
-
-[Share Your Feedback in Our Discussion!](https://github.com/onwidget/astrowind/discussions/392)
+### Legal & Compliance
+- Privacy Policy
+- Cookie Policy
+- Terms of Service
+- Legal Notice/Imprint
 
 <br>
 
-## TL;DR
+## 🚀 Getting Started
+
+### Installation
 
 ```shell
-npm create astro@latest -- --template onwidget/astrowind
+npm install
 ```
 
-## Getting started
+### Development
 
-**AstroWind** tries to give you quick access to creating a website using [Astro 5.0](https://astro.build/) + [Tailwind CSS](https://tailwindcss.com/). It's a free theme which focuses on simplicity, good practices and high performance.
+Start the local development server:
 
-Very little vanilla javascript is used only to provide basic functionality so that each developer decides which framework (React, Vue, Svelte, Solid JS...) to use and how to approach their goals.
+```shell
+npm run dev
+```
 
-In this version the template supports all the options in the `output` configuration, `static`, `hybrid` and `server`, but the blog only works with `prerender = true`. We are working on the next version and aim to make it fully compatible with SSR.
+Your site will be available at `http://localhost:4321`
 
-### Project structure
+### Build for Production
 
-Inside **AstroWind** template, you'll see the following folders and files:
+Create an optimized production build:
+
+```shell
+npm run build
+```
+
+### Preview Production Build
+
+Preview the production build locally:
+
+```shell
+npm run preview
+```
+
+<br>
+
+## 📁 Project Structure
 
 ```
 /
 ├── public/
 │   ├── _headers
-│   └── robots.txt
+│   ├── robots.txt
+│   └── images/
 ├── src/
 │   ├── assets/
 │   │   ├── favicons/
@@ -96,207 +105,173 @@ Inside **AstroWind** template, you'll see the following folders and files:
 │   ├── components/
 │   │   ├── blog/
 │   │   ├── common/
+│   │   ├── navigation/
+│   │   │   └── NavigationMenu.astro
 │   │   ├── ui/
-│   │   ├── widgets/
-│   │   │   ├── Header.astro
-│   │   │   └── ...
-│   │   ├── CustomStyles.astro
-│   │   ├── Favicons.astro
-│   │   └── Logo.astro
+│   │   └── widgets/
 │   ├── content/
-│   │   ├── post/
-│   │   │   ├── post-slug-1.md
-│   │   │   ├── post-slug-2.mdx
-│   │   │   └── ...
-│   │   └-- config.ts
+│   │   └── config.ts
+│   ├── data/
+│   │   └── post/
 │   ├── layouts/
 │   │   ├── Layout.astro
 │   │   ├── MarkdownLayout.astro
 │   │   └── PageLayout.astro
 │   ├── pages/
-│   │   ├── [...blog]/
-│   │   │   ├── [category]/
-│   │   │   ├── [tag]/
-│   │   │   ├── [...page].astro
-│   │   │   └── index.astro
 │   │   ├── index.astro
-│   │   ├── 404.astro
-│   │   ├-- rss.xml.ts
-│   │   └── ...
+│   │   ├── guide/
+│   │   │   ├── introduction/
+│   │   │   ├── planning-your-move/
+│   │   │   ├── arrival-and-first-steps/
+│   │   │   ├── healthcare-insurance/
+│   │   │   ├── housing-accommodation/
+│   │   │   ├── employment-career/
+│   │   │   ├── education-language/
+│   │   │   ├── transportation-mobility/
+│   │   │   ├── daily-life-integration/
+│   │   │   ├── financial-legal-matters/
+│   │   │   ├── practical-resources/
+│   │   │   ├── conclusion/
+│   │   │   ├── appendices/
+│   │   │   └── tax-declaration/
+│   │   ├── blog/
+│   │   │   └── [...slug].astro
+│   │   ├── tools.astro
+│   │   ├── about.astro
+│   │   ├── privacy-policy.md
+│   │   ├── cookie-policy.md
+│   │   ├── terms-of-service.md
+│   │   └── legal-notice.md
 │   ├── utils/
 │   ├── config.yaml
-│   └── navigation.js
-├── package.json
+│   └── navigation.ts
+├── PLAN.md
+├── CHANGES.md
+├── table-of-contents.md
 ├── astro.config.ts
-└── ...
+├── package.json
+└── tailwind.config.js
 ```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory if they do not require any transformation or in the `assets/` directory if they are imported directly.
-
-[![Edit AstroWind on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://githubbox.com/onwidget/astrowind/tree/main) [![Open in Gitpod](https://svgshare.com/i/xdi.svg)](https://gitpod.io/?on=gitpod#https://github.com/onwidget/astrowind) [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/onwidget/astrowind)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file `README.md`. Update `src/config.yaml` and contents. Have fun!
 
 <br>
 
-### Commands
+## 🔧 SEO Features
 
-All commands are run from the root of the project, from a terminal:
+### Frontmatter Template
+
+Each markdown file includes comprehensive SEO metadata:
+
+```yaml
+---
+title: "Page Title"
+seoTitle: "SEO Optimized Title | xPatLife"
+description: "Concise description for search engines and social media"
+keywords: ["keyword1", "keyword2", "keyword3"]
+ogTitle: "Open Graph Title"
+ogDescription: "Description for social sharing"
+ogImage: "/images/og/image.jpg"
+ogType: "article"
+twitterTitle: "Twitter Card Title"
+twitterDescription: "Description for Twitter sharing"
+twitterImage: "/images/twitter/image.jpg"
+twitterCard: "summary_large_image"
+canonicalUrl: "https://xpatlife.com/page-url"
+datePublished: "2025-11-15"
+dateModified: "2025-11-15"
+author: "xPatLife Team"
+---
+```
+
+### Integrations
+
+- **@astrojs/sitemap** - Automatic sitemap generation
+- **@astrojs/rss** - RSS feed for blog posts
+- **Cookie Consent** - GDPR-compliant cookie banner
+- **JSON-LD** - Structured data for search engines
+
+<br>
+
+## 🚀 Deployment
+
+### Deploy to Netlify
+
+1. **Connect Repository**
+   - Sign in to [Netlify](https://www.netlify.com/)
+   - Click "Add new site" → "Import an existing project"
+   - Connect to GitHub and select the `xpatlife` repository
+
+2. **Build Settings**
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+   - Node version: 18 or higher
+
+3. **Deploy**
+   - Trigger deployment
+   - Set up automatic deployments on push to `main` branch
+
+### Make Your Site Visible on Google
+
+1. **Google Search Console**
+   - Go to [Google Search Console](https://search.google.com/search-console/)
+   - Verify site ownership
+   - Submit sitemap: `https://yoursite.com/sitemap.xml`
+   - Monitor indexing status and search performance
+
+2. **Bing Webmaster Tools**
+   - Go to [Bing Webmaster Tools](https://www.bing.com/webmasters/)
+   - Verify site ownership
+   - Submit sitemap
+   - Monitor indexing
+
+3. **Validate SEO**
+   - Use [Google Rich Results Test](https://search.google.com/test/rich-results) for structured data
+   - Use [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) for Open Graph
+   - Run [Lighthouse](https://developers.google.com/web/tools/lighthouse) audit
+
+4. **Optional Analytics**
+   - Set up Google Analytics 4 for traffic monitoring
+   - Enable Core Web Vitals tracking
+
+<br>
+
+## 📝 Content Guidelines
+
+### Adding New Guide Pages
+
+1. Create a markdown file in the appropriate topic folder under `/src/pages/guide/`
+2. Add complete SEO frontmatter (use template above)
+3. Write clear, helpful content for expats
+4. Include relevant images with descriptive alt text
+5. Update navigation if adding a new main topic
+
+### Writing Blog Posts
+
+1. Create markdown files in `/src/pages/blog/` or `/src/data/post/`
+2. Include frontmatter with title, description, publish date, and tags
+3. Keep posts focused and actionable
+4. Link to relevant guide pages
+
+<br>
+
+## 🛠️ Commands Reference
 
 | Command             | Action                                             |
 | :------------------ | :------------------------------------------------- |
-| `npm install`       | Installs dependencies                              |
-| `npm run dev`       | Starts local dev server at `localhost:4321`        |
-| `npm run build`     | Build your production site to `./dist/`            |
-| `npm run preview`   | Preview your build locally, before deploying       |
-| `npm run check`     | Check your project for errors                      |
-| `npm run fix`       | Run Eslint and format codes with Prettier          |
-| `npm run astro ...` | Run CLI commands like `astro add`, `astro preview` |
+| `npm install`       | Install dependencies                               |
+| `npm run dev`       | Start local dev server at `localhost:4321`         |
+| `npm run build`     | Build production site to `./dist/`                 |
+| `npm run preview`   | Preview production build locally                   |
+| `npm run check`     | Check project for errors                           |
+| `npm run fix`       | Run Eslint and format with Prettier                |
 
 <br>
 
-### Configuration
+##  License
 
-Basic configuration file: `./src/config.yaml`
+See [LICENSE](./LICENSE.md) for details.
 
-```yaml
-site:
-  name: 'Example'
-  site: 'https://example.com'
-  base: '/' # Change this if you need to deploy to Github Pages, for example
-  trailingSlash: false # Generate permalinks with or without "/" at the end
+---
 
-  googleSiteVerificationId: false # Or some value,
+**xPatLife** - Helping expats navigate life in Germany with confidence.
 
-# Default SEO metadata
-metadata:
-  title:
-    default: 'Example'
-    template: '%s — Example'
-  description: 'This is the default meta description of Example website'
-  robots:
-    index: true
-    follow: true
-  openGraph:
-    site_name: 'Example'
-    images:
-      - url: '~/assets/images/default.png'
-        width: 1200
-        height: 628
-    type: website
-  twitter:
-    handle: '@twitter_user'
-    site: '@twitter_user'
-    cardType: summary_large_image
-
-i18n:
-  language: en
-  textDirection: ltr
-
-apps:
-  blog:
-    isEnabled: true # If the blog will be enabled
-    postsPerPage: 6 # Number of posts per page
-
-    post:
-      isEnabled: true
-      permalink: '/blog/%slug%' # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
-      robots:
-        index: true
-
-    list:
-      isEnabled: true
-      pathname: 'blog' # Blog main path, you can change this to "articles" (/articles)
-      robots:
-        index: true
-
-    category:
-      isEnabled: true
-      pathname: 'category' # Category main path /category/some-category, you can change this to "group" (/group/some-category)
-      robots:
-        index: true
-
-    tag:
-      isEnabled: true
-      pathname: 'tag' # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
-      robots:
-        index: false
-
-    isRelatedPostsEnabled: true # If a widget with related posts is to be displayed below each post
-    relatedPostsCount: 4 # Number of related posts to display
-
-analytics:
-  vendors:
-    googleAnalytics:
-      id: null # or "G-XXXXXXXXXX"
-
-ui:
-  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
-```
-
-<br>
-
-#### Customize Design
-
-To customize Font families, Colors or more Elements refer to the following files:
-
-- `src/components/CustomStyles.astro`
-- `src/assets/styles/tailwind.css`
-
-### Deploy
-
-#### Deploy to production (manual)
-
-You can create an optimized production build with:
-
-```shell
-npm run build
-```
-
-Now, your website is ready to be deployed. All generated files are located at
-`dist` folder, which you can deploy the folder to any hosting service you
-prefer.
-
-#### Deploy to Netlify
-
-Clone this repository on your own GitHub account and deploy it to Netlify:
-
-[![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/onwidget/astrowind)
-
-#### Deploy to Vercel
-
-Clone this repository on your own GitHub account and deploy to Vercel:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonwidget%2Fastrowind)
-
-<br>
-
-## Frequently Asked Questions
-
-- Why?
--
--
-
-<br>
-
-## Related projects
-
-- [TailNext](https://tailnext.vercel.app/) - Free template using Next.js 14 and Tailwind CSS with the new App Router.
-- [Qwind](https://qwind.pages.dev/) - Free template to make your website using Qwik + Tailwind CSS.
-
-## Contributing
-
-If you have any ideas, suggestions or find any bugs, feel free to open a discussion, an issue or create a pull request.
-That would be very useful for all of us and we would be happy to listen and take action.
-
-## Acknowledgements
-
-Initially created by [onWidget](https://onwidget.com) and maintained by a community of [contributors](https://github.com/onwidget/astrowind/graphs/contributors).
-
-## License
-
-**AstroWind** is licensed under the MIT license — see the [LICENSE](./LICENSE.md) file for details.
+For detailed implementation plans and change history, see [PLAN.md](./PLAN.md) and [CHANGES.md](./CHANGES.md).

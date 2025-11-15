@@ -1,0 +1,117 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Content from '~/components/widgets/Content.astro';
+
+const metadata = {
+  title: 'Tools & Resources',
+  description: 'Helpful calculators, checklists, and interactive tools for expats living in Germany.',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Section -->
+  <Hero
+    tagline="Interactive Resources"
+    title="Tools & Calculators"
+    subtitle="Practical tools to help you navigate life in Germany more easily."
+  />
+
+  <!-- Coming Soon Section -->
+  <Content
+    title="Tools Coming Soon"
+    subtitle="We're building helpful resources for you"
+    items={[
+      {
+        title: 'Tax Calculator',
+        description: 'Estimate your German income tax and net salary',
+        icon: 'tabler:calculator',
+      },
+      {
+        title: 'Cost of Living Calculator',
+        description: 'Compare living costs across German cities',
+        icon: 'tabler:coins',
+      },
+      {
+        title: 'Visa Checklist',
+        description: 'Track required documents for your visa application',
+        icon: 'tabler:checklist',
+      },
+      {
+        title: 'Moving Checklist',
+        description: 'Step-by-step guide for your relocation',
+        icon: 'tabler:list-check',
+      },
+      {
+        title: 'Health Insurance Comparison',
+        description: 'Compare public and private health insurance options',
+        icon: 'tabler:heart',
+      },
+      {
+        title: 'German Learning Tracker',
+        description: 'Track your German language learning progress',
+        icon: 'tabler:book',
+      },
+    ]}
+  >
+    <Fragment slot="content">
+      <p class="text-xl text-muted mb-6">
+        We're developing interactive tools and calculators to make your expat journey smoother. These resources will help you plan your move, manage finances, and navigate bureaucracy.
+      </p>
+      <p class="text-lg text-muted">
+        Check back soon for our first tools, or <a href="/blog" class="text-link hover:underline">read our blog</a> for tips and guides in the meantime.
+      </p>
+    </Fragment>
+  </Content>
+
+  <!-- Existing Resources Section -->
+  <Content
+    title="Available Resources"
+    subtitle="Start with these helpful resources"
+    isReversed
+    items={[
+      {
+        title: 'Comprehensive Guide',
+        description: 'Explore our detailed guide covering all aspects of living in Germany',
+        icon: 'tabler:book-2',
+      },
+      {
+        title: 'Blog Articles',
+        description: 'Read practical tips and real experiences from expats',
+        icon: 'tabler:article',
+      },
+      {
+        title: 'Quick References',
+        description: 'Access emergency numbers, useful contacts, and key information',
+        icon: 'tabler:info-circle',
+      },
+    ]}
+  >
+    <Fragment slot="content">
+      <p class="text-xl text-muted mb-6">
+        While we build our interactive tools, explore our existing resources:
+      </p>
+      <ul class="list-disc list-inside text-muted space-y-2">
+        <li><a href="/guide" class="text-link hover:underline">Complete xPatLife Guide</a></li>
+        <li><a href="/blog" class="text-link hover:underline">Blog Articles & Tips</a></li>
+        <li><a href="/guide/practical-resources" class="text-link hover:underline">Practical Resources Directory</a></li>
+      </ul>
+    </Fragment>
+  </Content>
+
+  <!-- Newsletter CTA Section -->
+  <Content
+    title="Stay Updated"
+    subtitle="Get notified when new tools launch"
+  >
+    <Fragment slot="content">
+      <p class="text-xl text-muted mb-6">
+        Want to be the first to know when we release new tools? Follow us or check back regularly for updates.
+      </p>
+      <div class="flex gap-4 mt-6">
+        <a href="/blog" class="btn btn-primary">Read Our Blog</a>
+        <a href="/guide" class="btn btn-secondary">Browse the Guide</a>
+      </div>
+    </Fragment>
+  </Content>
+</Layout>
