@@ -9,7 +9,6 @@ import CustomStyles from '~/components/CustomStyles.astro';
 import ApplyColorMode from '~/components/common/ApplyColorMode.astro';
 import Metadata from '~/components/common/Metadata.astro';
 import SiteVerification from '~/components/common/SiteVerification.astro';
-import Analytics from '~/components/common/Analytics.astro';
 import BasicScripts from '~/components/common/BasicScripts.astro';
 import CookieConsent from '~/components/common/CookieConsent.astro';
 
@@ -37,24 +36,28 @@ const { language, textDirection } = I18N;
     <SiteVerification />
 
     <!-- Google Consent Mode v2 -->
-    <script>
+    <script is:inline>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      
+      function gtag(...args) {
+        dataLayer.push(args);
+      }
+
       // Default consent to denied (GDPR compliant)
       gtag('consent', 'default', {
-        'ad_storage': 'denied',
-        'ad_user_data': 'denied',
-        'ad_personalization': 'denied',
-        'analytics_storage': 'denied'
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        analytics_storage: 'denied',
       });
     </script>
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-30WVJD55QS"></script>
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-30WVJD55QS"></script>
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag(...args) {
+        dataLayer.push(args);
+      }
       gtag('js', new Date());
       gtag('config', 'G-30WVJD55QS');
     </script>

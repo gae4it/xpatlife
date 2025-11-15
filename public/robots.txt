@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://xpatlife.netlify.app/sitemap.xml
+Sitemap: https://xpatlife.netlify.app/sitemap-index.xml
