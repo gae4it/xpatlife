@@ -24,6 +24,7 @@ This website transforms a 170-page book into an accessible, modern web experienc
 The website is organized into the following main sections:
 
 ### Guide (Main Content)
+
 - **Introduction** - About the book, target audience, expat journey overview
 - **Planning Your Move** - Immigration requirements, visas, financial preparation
 - **Arrival and First Steps** - Registration, tax ID, essential services
@@ -40,11 +41,13 @@ The website is organized into the following main sections:
 - **Tax Declaration** - Complete guide to Steuererklärung
 
 ### Additional Pages
+
 - **Blog** - Articles, updates, and expat stories
 - **Tools** - Calculators and interactive resources (planned)
 - **About** - About xPatLife and the team
 
 ### Legal & Compliance
+
 - Privacy Policy
 - Cookie Policy
 - Terms of Service
@@ -163,22 +166,22 @@ Each markdown file includes comprehensive SEO metadata:
 
 ```yaml
 ---
-title: "Page Title"
-seoTitle: "SEO Optimized Title | xPatLife"
-description: "Concise description for search engines and social media"
-keywords: ["keyword1", "keyword2", "keyword3"]
-ogTitle: "Open Graph Title"
-ogDescription: "Description for social sharing"
-ogImage: "/images/og/image.jpg"
-ogType: "article"
-twitterTitle: "Twitter Card Title"
-twitterDescription: "Description for Twitter sharing"
-twitterImage: "/images/twitter/image.jpg"
-twitterCard: "summary_large_image"
-canonicalUrl: "https://xpatlife.com/page-url"
-datePublished: "2025-11-15"
-dateModified: "2025-11-15"
-author: "xPatLife Team"
+title: 'Page Title'
+seoTitle: 'SEO Optimized Title | xPatLife'
+description: 'Concise description for search engines and social media'
+keywords: ['keyword1', 'keyword2', 'keyword3']
+ogTitle: 'Open Graph Title'
+ogDescription: 'Description for social sharing'
+ogImage: '/images/og/image.jpg'
+ogType: 'article'
+twitterTitle: 'Twitter Card Title'
+twitterDescription: 'Description for Twitter sharing'
+twitterImage: '/images/twitter/image.jpg'
+twitterCard: 'summary_large_image'
+canonicalUrl: 'https://xpatlife.com/page-url'
+datePublished: '2025-11-15'
+dateModified: '2025-11-15'
+author: 'xPatLife Team'
 ---
 ```
 
@@ -255,18 +258,18 @@ author: "xPatLife Team"
 
 ## 🛠️ Commands Reference
 
-| Command             | Action                                             |
-| :------------------ | :------------------------------------------------- |
-| `npm install`       | Install dependencies                               |
-| `npm run dev`       | Start local dev server at `localhost:4321`         |
-| `npm run build`     | Build production site to `./dist/`                 |
-| `npm run preview`   | Preview production build locally                   |
-| `npm run check`     | Check project for errors                           |
-| `npm run fix`       | Run Eslint and format with Prettier                |
+| Command           | Action                                     |
+| :---------------- | :----------------------------------------- |
+| `npm install`     | Install dependencies                       |
+| `npm run dev`     | Start local dev server at `localhost:4321` |
+| `npm run build`   | Build production site to `./dist/`         |
+| `npm run preview` | Preview production build locally           |
+| `npm run check`   | Check project for errors                   |
+| `npm run fix`     | Run Eslint and format with Prettier        |
 
 <br>
 
-##  License
+## License
 
 See [LICENSE](./LICENSE.md) for details.
 

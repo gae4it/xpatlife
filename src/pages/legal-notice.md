@@ -1,11 +1,11 @@
 ---
-title: "Legal Notice (Impressum)"
-seoTitle: "Legal Notice | xPatLife"
-description: "Legal notice and imprint for xPatLife website in accordance with German law."
-layout: "~/layouts/MarkdownLayout.astro"
+title: 'Legal Notice (Impressum)'
+seoTitle: 'Legal Notice | xPatLife'
+description: 'Legal notice and imprint for xPatLife website in accordance with German law.'
+layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-*This page is required by German law (§5 TMG - Telemediengesetz)*
+_This page is required by German law (§5 TMG - Telemediengesetz)_
 
 ## Information According to §5 TMG
 
@@ -28,7 +28,8 @@ Germany
 
 ## Register Entry
 
-*If applicable for registered businesses:*
+_If applicable for registered businesses:_
+
 - Register Court: [Court Name]
 - Register Number: [Registration Number]
 - VAT ID: [VAT Identification Number according to §27a UStG]
@@ -83,7 +84,7 @@ Always consult qualified professionals for advice specific to your situation.
 **Rapidly Changing Information:** Immigration policies, tax laws, healthcare regulations, and other official procedures change frequently. Information on this website may not reflect the most current regulations. We recommend:
 
 - Consulting official government agencies for current requirements
-- Seeking qualified professional advice for your specific situation  
+- Seeking qualified professional advice for your specific situation
 - Verifying all information with authoritative sources before making decisions
 - Not relying solely on this website for important life decisions
 
@@ -99,6 +100,7 @@ By using this website, you acknowledge and agree that:
 ### Hosting Platform
 
 This website is hosted on Netlify. We are not responsible for:
+
 - Technical issues or downtime caused by the hosting platform
 - Security breaches at the hosting level
 - Data processing by Netlify (see their privacy policy)
@@ -141,7 +143,8 @@ We are not willing or obliged to participate in dispute resolution proceedings b
 
 ## Image Credits
 
-*If applicable:*
+_If applicable:_
+
 - Images from [Source Name]: [License Information]
 - Icons by [Provider Name]: [License Information]
 - Photography by [Photographer Name]: [License Information]
@@ -159,6 +162,7 @@ This website uses Google Analytics, a web analytics service provided by Google L
 ## Social Media
 
 Official xPatLife social media profiles:
+
 - [Platform Name]: [URL]
 - [Platform Name]: [URL]
 
@@ -168,4 +172,4 @@ We are not responsible for the content of external social media platforms or thi
 
 **Last updated:** November 15, 2025
 
-*This legal notice complies with German law requirements for website operators (Impressumspflicht according to §5 TMG and §55 RStV).*
+_This legal notice complies with German law requirements for website operators (Impressumspflicht according to §5 TMG and §55 RStV)._

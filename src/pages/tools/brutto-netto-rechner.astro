@@ -4,7 +4,8 @@ import Hero from '~/components/widgets/Hero.astro';
 
 const metadata = {
   title: 'Brutto-Netto-Rechner - Salary Calculator for Germany',
-  description: 'Calculate your net salary (take-home pay) from your gross salary in Germany. Interactive salary calculator with tax and social insurance deductions.',
+  description:
+    'Calculate your net salary (take-home pay) from your gross salary in Germany. Interactive salary calculator with tax and social insurance deductions.',
 };
 ---
 
@@ -20,8 +21,9 @@ const metadata = {
   <section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-7xl">
     <div class="mb-8 text-center">
       <p class="text-xl text-muted dark:text-slate-400 mb-4">
-        Use this calculator to determine your net salary (Netto) from your gross salary (Brutto) in Germany. 
-        The calculator includes all relevant deductions: income tax, solidarity surcharge, and social insurance contributions.
+        Use this calculator to determine your net salary (Netto) from your gross salary (Brutto) in Germany. The
+        calculator includes all relevant deductions: income tax, solidarity surcharge, and social insurance
+        contributions.
       </p>
       <p class="text-lg text-muted dark:text-slate-400">
         This tool helps you understand how much you'll actually receive in your bank account after all deductions.
@@ -30,34 +32,36 @@ const metadata = {
 
     <!-- Iframe Container -->
     <div class="bg-white dark:bg-slate-800 rounded-lg shadow-lg p-4">
-      <iframe 
-        src="https://www.brutto-netto-rechner.info/" 
+      <iframe
+        src="https://www.brutto-netto-rechner.info/"
         class="w-full h-[1200px] border-0 rounded"
         title="Brutto-Netto-Rechner - German Salary Calculator"
-        loading="lazy"
-      ></iframe>
+        loading="lazy"></iframe>
     </div>
 
     <!-- Additional Information -->
     <div class="mt-12 prose prose-lg dark:prose-invert mx-auto max-w-4xl">
       <h2>Understanding German Salary Calculations</h2>
-      
+
       <h3>What is Brutto (Gross Salary)?</h3>
       <p>
-        Your Brutto salary is the total amount your employer pays you before any deductions. 
-        This is the figure typically mentioned in job offers and employment contracts.
+        Your Brutto salary is the total amount your employer pays you before any deductions. This is the figure
+        typically mentioned in job offers and employment contracts.
       </p>
 
       <h3>What is Netto (Net Salary)?</h3>
       <p>
-        Your Netto salary is what you actually receive in your bank account after all taxes and 
-        social insurance contributions have been deducted. This is your "take-home pay."
+        Your Netto salary is what you actually receive in your bank account after all taxes and social insurance
+        contributions have been deducted. This is your "take-home pay."
       </p>
 
       <h3>Deductions Explained</h3>
       <ul>
         <li><strong>Income Tax (Einkommensteuer):</strong> Progressive tax based on your income level</li>
-        <li><strong>Solidarity Surcharge (Solidaritätszuschlag):</strong> Additional tax (currently being phased out for most earners)</li>
+        <li>
+          <strong>Solidarity Surcharge (Solidaritätszuschlag):</strong> Additional tax (currently being phased out for most
+          earners)
+        </li>
         <li><strong>Health Insurance (Krankenversicherung):</strong> Approximately 7.3% of gross salary</li>
         <li><strong>Nursing Care Insurance (Pflegeversicherung):</strong> Approximately 1.525% of gross salary</li>
         <li><strong>Pension Insurance (Rentenversicherung):</strong> Approximately 9.3% of gross salary</li>
@@ -66,8 +70,8 @@ const metadata = {
 
       <h3>Tax Classes (Steuerklasse)</h3>
       <p>
-        Your tax class affects how much income tax is deducted. The calculator allows you to select 
-        from different tax classes based on your personal situation:
+        Your tax class affects how much income tax is deducted. The calculator allows you to select from different tax
+        classes based on your personal situation:
       </p>
       <ul>
         <li><strong>Class I:</strong> Single or divorced</li>

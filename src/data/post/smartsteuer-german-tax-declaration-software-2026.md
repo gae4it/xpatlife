@@ -64,18 +64,23 @@ SmartSteuer is ideal for:
 ## How SmartSteuer Works
 
 ### Step 1: Create Your Account
+
 Sign up at [SmartSteuer](https://steuererklaerung.smartsteuer.de/) and create your personal account.
 
 ### Step 2: Answer Simple Questions
+
 The software guides you through a series of straightforward questions about your income, expenses, family situation, and more.
 
 ### Step 3: Review Your Declaration
+
 SmartSteuer automatically generates all required tax forms based on your answers. You can review everything before submission.
 
 ### Step 4: Submit Electronically
+
 Once you're satisfied, submit your tax declaration directly to your local Finanzamt via ELSTER integration.
 
 ### Step 5: Track Your Refund
+
 Monitor the status of your tax declaration and receive notifications when your refund is processed.
 
 ## Key Features for Expats
@@ -149,4 +154,4 @@ For more information about taxes and financial matters in Germany, check out our
 - [Financial & Legal Matters Guide](/guide/financial-legal-matters) - Everything expats need to know about managing finances in Germany
 - [Tax Declaration Resources](/guide/appendices#tax-declaration) - Links and resources for German tax filing
 
-*Disclaimer: This article provides general information about tax software options. Individual tax situations vary, and this content should not be considered personalized tax advice. For complex tax matters, consult a qualified Steuerberater (tax advisor).*
+_Disclaimer: This article provides general information about tax software options. Individual tax situations vary, and this content should not be considered personalized tax advice. For complex tax matters, consult a qualified Steuerberater (tax advisor)._

@@ -5,9 +5,10 @@ import Layout from '~/layouts/PageLayout.astro';
 import BlogList from '~/components/blog/List.astro';
 import Headline from '~/components/blog/Headline.astro';
 import Pagination from '~/components/blog/Pagination.astro';
+import { getPermalink } from '~/utils/permalinks';
 // import PostTags from "~/components/blog/Tags.astro";
 
-import { blogListRobots, getStaticPathsBlogList } from '~/utils/blog';
+import { blogListRobots, getStaticPathsBlogList, fetchPosts } from '~/utils/blog';
 
 export const prerender = true;
 
@@ -19,6 +20,12 @@ type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
 const { page } = Astro.props as Props;
 const currentPage = page.currentPage ?? 1;
+
+// Get unique categories from all posts
+const allPosts = await fetchPosts();
+const categories = Array.from(
+  new Map(allPosts.filter((post) => post.category).map((post) => [post.category!.slug, post.category!])).values()
+);
 
 // const allCategories = await findCategories();
 // const allTags = await findTags();
@@ -42,6 +49,24 @@ const metadata = {
     >
       The Blog
     </Headline>
+
+    {
+      categories.length > 0 && (
+        <div class="mb-12">
+          <div class="flex flex-wrap justify-center gap-3">
+            {categories.map((category) => (
+              <a
+                href={getPermalink(category.slug, 'category')}
+                class="inline-block bg-blue-100 hover:bg-blue-200 dark:bg-blue-900 dark:hover:bg-blue-800 text-blue-800 dark:text-blue-100 px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 shadow-sm hover:shadow-md"
+              >
+                {category.title}
+              </a>
+            ))}
+          </div>
+        </div>
+      )
+    }
+
     <BlogList posts={page.data} />
     <Pagination prevUrl={page.url.prev} nextUrl={page.url.next} />
     <!--

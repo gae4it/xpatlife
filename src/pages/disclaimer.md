@@ -1,8 +1,8 @@
 ---
-title: "Disclaimer"
-seoTitle: "Disclaimer | xPatLife"
-description: "Important legal disclaimers and limitations of liability for the xPatLife website."
-layout: "~/layouts/MarkdownLayout.astro"
+title: 'Disclaimer'
+seoTitle: 'Disclaimer | xPatLife'
+description: 'Important legal disclaimers and limitations of liability for the xPatLife website.'
+layout: '~/layouts/MarkdownLayout.astro'
 ---
 
 **Last updated: November 15, 2025**
@@ -14,8 +14,9 @@ layout: "~/layouts/MarkdownLayout.astro"
 ### Educational Project Notice
 
 **xPatLife is a personal educational project created for the purpose of learning web development.** This website is NOT:
+
 - A professional information service
-- An official government resource  
+- An official government resource
 - A commercial business operation
 - Endorsed or verified by any official authority
 - A substitute for professional advice
@@ -28,7 +29,7 @@ layout: "~/layouts/MarkdownLayout.astro"
 - **Immigration Consulting** - We are not licensed immigration consultants
 - **Tax Advice** - We are not Steuerberater (certified tax advisors)
 - **Financial Planning** - We are not financial advisors
-- **Medical Advice** - We are not healthcare professionals  
+- **Medical Advice** - We are not healthcare professionals
 - **Official Guidance** - We are not a government agency
 
 ### Information Accuracy
@@ -40,6 +41,7 @@ layout: "~/layouts/MarkdownLayout.astro"
 The world changes rapidly. Laws, regulations, procedures, and requirements in Germany change frequently—sometimes with little notice. Information that was accurate when published may be outdated or incorrect when you read it.
 
 **Specific areas that change frequently include:**
+
 - Immigration laws and visa requirements
 - Tax regulations and filing procedures
 - Healthcare insurance rules
@@ -50,6 +52,7 @@ The world changes rapidly. Laws, regulations, procedures, and requirements in Ge
 #### Potential for Errors
 
 This website may contain:
+
 - Factual errors or inaccuracies
 - Outdated information
 - Incomplete information
@@ -113,11 +116,13 @@ This website may contain:
 **BEFORE making ANY important decision, you MUST:**
 
 ✅ **Consult Official Sources:**
+
 - German government websites (e.g., bundesregierung.de, bamf.de)
 - Official agencies (Ausländerbehörde, Finanzamt, Krankenkassen)
 - Embassy or consulate of your home country
 
 ✅ **Seek Professional Advice:**
+
 - Licensed immigration lawyers (Rechtsanwalt für Ausländerrecht)
 - Certified tax advisors (Steuerberater)
 - Financial planners (Finanzberater)
@@ -125,12 +130,14 @@ This website may contain:
 - Other qualified professionals as appropriate
 
 ✅ **Verify Current Requirements:**
+
 - Check official government portals for current regulations
 - Confirm procedures haven't changed
 - Understand your specific individual situation
 - Get personalized advice for your circumstances
 
 ❌ **DO NOT:**
+
 - Make important life decisions based solely on this website
 - Assume information is current
 - Skip professional consultation to save money
@@ -143,6 +150,7 @@ This website may contain:
 **Website Hosting:** This website is hosted on **Netlify**.
 
 **We are NOT responsible for:**
+
 - Netlify server downtime or outages
 - Hosting platform security breaches
 - Technical malfunctions at hosting level
@@ -151,12 +159,14 @@ This website may contain:
 - Any hosting-related issues
 
 **For Netlify's terms and privacy policy, visit:**
+
 - Terms: [https://www.netlify.com/legal/terms-of-use/](https://www.netlify.com/legal/terms-of-use/)
 - Privacy: [https://www.netlify.com/privacy/](https://www.netlify.com/privacy/)
 
 #### Website Availability
 
 We do NOT guarantee:
+
 - Continuous website availability
 - Error-free operation
 - Freedom from viruses or malware
@@ -170,6 +180,7 @@ We do NOT guarantee:
 This website may contain links to external websites, resources, or services.
 
 **We are NOT responsible for:**
+
 - Content on linked websites
 - Privacy practices of third parties
 - Accuracy of external information
@@ -181,6 +192,7 @@ This website may contain links to external websites, resources, or services.
 #### User-Generated Content
 
 Any comments, feedback, or user-generated content:
+
 - Does NOT represent our views or opinions
 - May contain inaccurate information
 - Is provided by users at their own responsibility
@@ -209,6 +221,7 @@ Any comments, feedback, or user-generated content:
 ### Indemnification
 
 **By using this website, you agree to indemnify and hold harmless** xPatLife, its owner, contributors, and hosting provider from any and all:
+
 - Claims, demands, or actions
 - Damages, losses, or expenses (including legal fees)
 - Arising from your use of the website
