@@ -1,8 +1,8 @@
 ---
-title: "Cookie Policy"
-seoTitle: "Cookie Policy | xPatLife"
-description: "Learn about how xPatLife uses cookies and similar tracking technologies on our website."
-layout: "~/layouts/MarkdownLayout.astro"
+title: 'Cookie Policy'
+seoTitle: 'Cookie Policy | xPatLife'
+description: 'Learn about how xPatLife uses cookies and similar tracking technologies on our website.'
+layout: '~/layouts/MarkdownLayout.astro'
 ---
 
 **Last updated: November 15, 2025**
@@ -18,6 +18,7 @@ xPatLife uses cookies for the following purposes:
 ### Essential Cookies
 
 These cookies are necessary for the website to function properly and cannot be disabled:
+
 - Session management
 - Security features
 - Basic website functionality
@@ -25,6 +26,7 @@ These cookies are necessary for the website to function properly and cannot be d
 ### Analytics Cookies
 
 These cookies help us understand how visitors interact with our website:
+
 - Google Analytics - tracks page views, user behavior, and traffic sources
 - Performance monitoring
 - Error tracking
@@ -32,6 +34,7 @@ These cookies help us understand how visitors interact with our website:
 ### Preference Cookies
 
 These cookies remember your choices and preferences:
+
 - Theme preference (light/dark mode)
 - Language settings
 - Cookie consent choices
@@ -39,6 +42,7 @@ These cookies remember your choices and preferences:
 ### Marketing Cookies (Optional)
 
 With your consent, we may use cookies for:
+
 - Tracking conversions from advertisements
 - Retargeting campaigns
 - Social media integration
@@ -50,6 +54,7 @@ You have several options for managing cookies:
 ### Browser Settings
 
 You can configure your browser to:
+
 - Block all cookies
 - Block third-party cookies only
 - Delete cookies when you close your browser
@@ -60,6 +65,7 @@ You can configure your browser to:
 ### Cookie Consent Banner
 
 When you first visit our website, you can choose to:
+
 - **Accept All** - Allow all cookies
 - **Necessary Only** - Only essential cookies
 - **Reject All** - Block all non-essential cookies
@@ -95,9 +101,10 @@ If you have questions about our use of cookies, please contact us:
 ## More Information
 
 For more information about cookies and how to manage them, visit:
+
 - [aboutcookies.org](https://www.aboutcookies.org/)
 - [Your Online Choices](https://www.youronlinechoices.com/)
 
 ---
 
-*This cookie policy complies with GDPR, ePrivacy Directive, and other applicable regulations.*
+_This cookie policy complies with GDPR, ePrivacy Directive, and other applicable regulations._

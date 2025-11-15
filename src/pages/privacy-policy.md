@@ -1,8 +1,8 @@
 ---
-title: "Privacy Policy"
-seoTitle: "Privacy Policy | xPatLife"
-description: "Privacy policy for xPatLife - Learn how we collect, use, and protect your personal information."
-layout: "~/layouts/MarkdownLayout.astro"
+title: 'Privacy Policy'
+seoTitle: 'Privacy Policy | xPatLife'
+description: 'Privacy policy for xPatLife - Learn how we collect, use, and protect your personal information.'
+layout: '~/layouts/MarkdownLayout.astro'
 ---
 
 **Last updated: November 15, 2025**
@@ -26,6 +26,7 @@ xPatLife ("we," "our," or "us") is committed to protecting your privacy. This Pr
 ### Information You Provide
 
 We may collect information that you voluntarily provide to us, including:
+
 - Name and email address (if you subscribe to our newsletter)
 - Comments and feedback you submit
 - Contact information if you reach out to us
@@ -33,6 +34,7 @@ We may collect information that you voluntarily provide to us, including:
 ### Automatically Collected Information
 
 When you visit our website, we may automatically collect:
+
 - Browser type and version
 - Operating system
 - IP address
@@ -43,6 +45,7 @@ When you visit our website, we may automatically collect:
 ## How We Use Your Information
 
 We use the information we collect to:
+
 - Provide, operate, and maintain our website
 - Improve and personalize your experience
 - Understand how you use our website
@@ -55,6 +58,7 @@ We use the information we collect to:
 ## Cookies and Tracking Technologies
 
 We use cookies and similar tracking technologies to:
+
 - Remember your preferences
 - Understand how you use our website
 - Improve website performance
@@ -75,6 +79,7 @@ These third parties have their own privacy policies governing their use of your 
 ## Data Sharing and Disclosure
 
 We do not sell, trade, or rent your personal information to third parties. We may share information:
+
 - With service providers who assist in operating our website
 - When required by law or to protect our rights
 - With your consent
@@ -87,6 +92,7 @@ We implement appropriate technical and organizational measures to protect your p
 ## Your Rights
 
 Depending on your location, you may have the following rights:
+
 - Access to your personal data
 - Correction of inaccurate data
 - Deletion of your data
@@ -113,4 +119,4 @@ If you have questions about this Privacy Policy, please contact us at:
 
 ---
 
-*This privacy policy complies with GDPR and other applicable data protection regulations.*
+_This privacy policy complies with GDPR and other applicable data protection regulations._

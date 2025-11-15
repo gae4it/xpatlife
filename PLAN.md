@@ -7,6 +7,7 @@ This plan details the full structure, features, and SEO strategy for the xPatLif
 ## 1. Site Structure & Navigation
 
 ### Main Navigation (Header)
+
 - **Home** (landing page)
 - **Guide** (dropdown menu with two levels)
   - **First level**: Main topics (formerly "sections")
@@ -32,15 +33,18 @@ This plan details the full structure, features, and SEO strategy for the xPatLif
 - **About** (standalone page)
 
 ### Additional Header Elements
+
 - Theme toggle button (black/white)
 - RSS button
 - Download button (placeholder for future use)
 
 ### Home Page
+
 - Hero section with prominent **"Read the Guide"** button (with book icon), replacing "Discover more"
 - **"Learn more"** button remains in its current position
 
 ### Footer
+
 - Privacy Policy
 - Cookie Policy
 - Terms of Service
@@ -51,6 +55,7 @@ This plan details the full structure, features, and SEO strategy for the xPatLif
 ## 2. Content Organization
 
 ### File Structure
+
 ```
 src/pages/
   index.astro                    # Home page
@@ -94,6 +99,7 @@ src/pages/
 ```
 
 ### Naming Conventions
+
 - Use descriptive, human-readable slugs (no "section-" or "chapter-" prefixes)
 - Example: `/guide/planning-your-move/can-i-move-to-germany`
 - No numbers in URLs
@@ -108,28 +114,29 @@ Each markdown file should include comprehensive SEO metadata:
 
 ```yaml
 ---
-title: "Essential Services"
-seoTitle: "Essential Services for Expats in Germany | xPatLife"
-description: "A practical guide to banking, utilities, and essential services for expats moving to Germany."
-keywords: ["expat", "Germany", "banking", "utilities", "services", "guide"]
-ogTitle: "Essential Services for Expats in Germany"
-ogDescription: "Everything expats need to know about essential services in Germany."
-ogImage: "/images/og/essential-services.jpg"
-ogType: "article"
-twitterTitle: "Essential Services for Expats in Germany"
-twitterDescription: "Banking, utilities, and more for expats in Germany."
-twitterImage: "/images/twitter/essential-services.jpg"
-twitterCard: "summary_large_image"
-canonicalUrl: "https://xpatlife.com/guide/arrival-and-first-steps/essential-services"
-datePublished: "2025-11-15"
-dateModified: "2025-11-15"
-author: "xPatLife Team"
+title: 'Essential Services'
+seoTitle: 'Essential Services for Expats in Germany | xPatLife'
+description: 'A practical guide to banking, utilities, and essential services for expats moving to Germany.'
+keywords: ['expat', 'Germany', 'banking', 'utilities', 'services', 'guide']
+ogTitle: 'Essential Services for Expats in Germany'
+ogDescription: 'Everything expats need to know about essential services in Germany.'
+ogImage: '/images/og/essential-services.jpg'
+ogType: 'article'
+twitterTitle: 'Essential Services for Expats in Germany'
+twitterDescription: 'Banking, utilities, and more for expats in Germany.'
+twitterImage: '/images/twitter/essential-services.jpg'
+twitterCard: 'summary_large_image'
+canonicalUrl: 'https://xpatlife.com/guide/arrival-and-first-steps/essential-services'
+datePublished: '2025-11-15'
+dateModified: '2025-11-15'
+author: 'xPatLife Team'
 ---
 ```
 
 ### Astro Integrations
 
 Install and configure:
+
 - `@astrojs/sitemap` - Automatic sitemap.xml generation
 - `@astrojs/rss` - RSS feed for blog posts
 - `@astrojs/image` - Image optimization and lazy loading
@@ -146,6 +153,7 @@ Install and configure:
    - `<link rel="canonical" href={canonicalUrl}>`
 
 2. **Open Graph tags:**
+
    ```html
    <meta property="og:title" content={ogTitle || seoTitle}>
    <meta property="og:description" content={ogDescription || description}>
@@ -155,6 +163,7 @@ Install and configure:
    ```
 
 3. **Twitter Card tags:**
+
    ```html
    <meta name="twitter:card" content={twitterCard || 'summary_large_image'}>
    <meta name="twitter:title" content={twitterTitle || ogTitle}>
@@ -165,20 +174,20 @@ Install and configure:
 4. **JSON-LD Structured Data (in `<head>`):**
    ```html
    <script type="application/ld+json">
-   {
-     "@context": "https://schema.org",
-     "@type": "Book",
-     "name": "{title}",
-     "author": {
-       "@type": "Organization",
-       "name": "xPatLife"
-     },
-     "datePublished": "{datePublished}",
-     "dateModified": "{dateModified}",
-     "description": "{description}",
-     "image": "{ogImage}",
-     "url": "{canonicalUrl}"
-   }
+     {
+       "@context": "https://schema.org",
+       "@type": "Book",
+       "name": "{title}",
+       "author": {
+         "@type": "Organization",
+         "name": "xPatLife"
+       },
+       "datePublished": "{datePublished}",
+       "dateModified": "{dateModified}",
+       "description": "{description}",
+       "image": "{ogImage}",
+       "url": "{canonicalUrl}"
+     }
    </script>
    ```
 
@@ -195,6 +204,7 @@ Install and configure:
 ### Other SEO Best Practices
 
 1. **robots.txt** - Allow crawling, reference sitemap
+
    ```
    User-agent: *
    Allow: /
@@ -228,12 +238,14 @@ Install and configure:
 ## 5. Legal & Compliance
 
 ### Required Pages (Footer)
+
 - **Privacy Policy** - Data collection, usage, third-party services
 - **Cookie Policy** - Cookie types, purposes, consent management
 - **Terms of Service** - Usage terms, disclaimers, limitations
 - **Legal Notice/Imprint** - Required for EU websites (especially Germany)
 
 ### Cookie Consent
+
 - Implement cookie banner with options to accept/reject non-essential cookies
 - Respect user preferences and GDPR requirements
 - Store consent in localStorage
@@ -337,6 +349,7 @@ Install and configure:
 ## 9. Future Considerations
 
 ### Questions to Address
+
 - **Multi-language support?** - Add German version or other languages?
 - **Blog categories/tags?** - Organize blog posts by topic?
 - **Tools page content?** - Tax calculators, cost of living tools, etc.?
@@ -346,6 +359,7 @@ Install and configure:
 - **User accounts?** - Personalized content or saved progress?
 
 ### Potential Enhancements
+
 - Search bar for guide content
 - Next/Previous navigation between chapters
 - Progress tracker for reading the guide

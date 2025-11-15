@@ -7,7 +7,8 @@
   <div class="cookie-consent-container">
     <div class="cookie-consent-content">
       <p class="cookie-consent-text max-w-lg">
-        We use cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept All", you consent to our use of cookies. 
+        We use cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept All", you
+        consent to our use of cookies.
         <a href="/cookie-policy" class="cookie-consent-link">Learn more</a>
       </p>
       <div class="cookie-consent-buttons">
@@ -31,22 +32,22 @@
     z-index: 9999;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
   }
-  
+
   .cookie-consent.hidden {
     display: none;
   }
-  
+
   .cookie-consent-container {
     max-width: 1200px;
     margin: 0 auto;
   }
-  
+
   .cookie-consent-content {
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   @media (min-width: 768px) {
     .cookie-consent-content {
       flex-direction: row;
@@ -54,28 +55,28 @@
       justify-content: space-between;
     }
   }
-  
+
   .cookie-consent-text {
     margin: 0;
     font-size: 0.875rem;
     line-height: 1.5;
   }
-  
+
   .cookie-consent-link {
     color: #60a5fa;
     text-decoration: underline;
   }
-  
+
   .cookie-consent-link:hover {
     color: #93c5fd;
   }
-  
+
   .cookie-consent-buttons {
     display: flex;
     gap: 0.75rem;
     flex-wrap: wrap;
   }
-  
+
   .btn {
     padding: 0.5rem 1rem;
     border: none;
@@ -85,31 +86,31 @@
     cursor: pointer;
     transition: all 0.2s;
   }
-  
+
   .btn-primary {
     background: #2563eb;
     color: white;
   }
-  
+
   .btn-primary:hover {
     background: #1d4ed8;
   }
-  
+
   .btn-secondary {
     background: #6b7280;
     color: white;
   }
-  
+
   .btn-secondary:hover {
     background: #4b5563;
   }
-  
+
   .btn-tertiary {
     background: transparent;
     color: white;
     border: 1px solid white;
   }
-  
+
   .btn-tertiary:hover {
     background: rgba(255, 255, 255, 0.1);
   }
@@ -135,7 +136,7 @@
   function saveConsent(choice: string) {
     localStorage.setItem(COOKIE_CONSENT_KEY, choice);
     cookieBanner?.classList.add('hidden');
-    
+
     // Here you can enable/disable analytics based on the choice
     if (choice === 'all') {
       // Enable all cookies (analytics, tracking, etc.)

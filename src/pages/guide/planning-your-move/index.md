@@ -1,20 +1,28 @@
 ---
-title: "Planning Your Move to Germany"
-seoTitle: "Planning Your Move to Germany - Immigration, Visas & Financial Preparation | xPatLife"
-description: "Essential guide for planning your move to Germany. Learn about immigration requirements, visa types, financial preparation, and pre-arrival checklists for expats."
-keywords: ["moving to Germany", "Germany visa", "immigration Germany", "expat planning", "cost of living Germany", "financial preparation"]
-ogTitle: "Planning Your Move to Germany | xPatLife"
-ogDescription: "Essential guide for planning your move to Germany as an expat"
-ogImage: "/images/og/planning-your-move.jpg"
-ogType: "article"
-twitterTitle: "Planning Your Move to Germany"
-twitterDescription: "Immigration, visas, and financial preparation for moving to Germany"
-twitterImage: "/images/twitter/planning-your-move.jpg"
-twitterCard: "summary_large_image"
-datePublished: "2025-11-15"
-dateModified: "2025-11-15"
-author: "xPatLife Team"
-layout: "~/layouts/MarkdownLayout.astro"
+title: 'Planning Your Move to Germany'
+seoTitle: 'Planning Your Move to Germany - Immigration, Visas & Financial Preparation | xPatLife'
+description: 'Essential guide for planning your move to Germany. Learn about immigration requirements, visa types, financial preparation, and pre-arrival checklists for expats.'
+keywords:
+  [
+    'moving to Germany',
+    'Germany visa',
+    'immigration Germany',
+    'expat planning',
+    'cost of living Germany',
+    'financial preparation',
+  ]
+ogTitle: 'Planning Your Move to Germany | xPatLife'
+ogDescription: 'Essential guide for planning your move to Germany as an expat'
+ogImage: '/images/og/planning-your-move.jpg'
+ogType: 'article'
+twitterTitle: 'Planning Your Move to Germany'
+twitterDescription: 'Immigration, visas, and financial preparation for moving to Germany'
+twitterImage: '/images/twitter/planning-your-move.jpg'
+twitterCard: 'summary_large_image'
+datePublished: '2025-11-15'
+dateModified: '2025-11-15'
+author: 'xPatLife Team'
+layout: '~/layouts/MarkdownLayout.astro'
 ---
 
 Moving to Germany is an exciting journey that requires careful planning and preparation. This section guides you through everything you need to know before making the move, from understanding immigration requirements to financial preparation.
@@ -37,8 +45,6 @@ Understanding whether and how you can legally move to Germany is the first step.
 - **Pre-Arrival Checklist**
   - Essential tasks before moving
 
-
-
 ### Financial Preparation
 
 Proper financial planning is crucial for a smooth transition. Discover:
@@ -57,8 +63,6 @@ Proper financial planning is crucial for a smooth transition. Discover:
 
 - **Pre-Departure Financial Checklist**
   - Steps to take before you leave
-
-
 
 ## Key Takeaways
 
@@ -80,4 +84,4 @@ Once you've completed your planning:
 
 ---
 
-**Disclaimer:** *The information provided in this guide is for general informational purposes and may not reflect the most current regulations, which change rapidly. We recommend consulting official government agencies and qualified professionals for up-to-date, personalized advice.*
+**Disclaimer:** _The information provided in this guide is for general informational purposes and may not reflect the most current regulations, which change rapidly. We recommend consulting official government agencies and qualified professionals for up-to-date, personalized advice._

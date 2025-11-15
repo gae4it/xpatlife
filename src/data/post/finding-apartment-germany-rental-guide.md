@@ -54,16 +54,18 @@ But don't despair! With the right strategy, proper documentation, and realistic 
 **Warmmiete (Warm Rent)**: Kaltmiete + Nebenkosten = total monthly payment
 
 **Example**:
+
 - 60m² apartment
 - Kaltmiete: €900
 - Nebenkosten: €180 (€3/m²)
 - Warmmiete: €1,080
 
-*Always ask for Warmmiete when comparing prices!*
+_Always ask for Warmmiete when comparing prices!_
 
 ### Apartment Types
 
 **Altbau (Old Building)**:
+
 - Built before 1945
 - High ceilings (3-4m)
 - Ornate details (molding, parquet floors)
@@ -73,6 +75,7 @@ But don't despair! With the right strategy, proper documentation, and realistic 
 - Sometimes no elevator
 
 **Neubau (New Building)**:
+
 - Modern construction
 - Better insulation (lower heating costs)
 - Modern amenities (dishwasher, elevator, balcony)
@@ -80,6 +83,7 @@ But don't despair! With the right strategy, proper documentation, and realistic 
 - Less character
 
 **WG (Wohngemeinschaft - Shared Apartment)**:
+
 - Share apartment with roommates
 - Private bedroom, shared kitchen/bathroom/living room
 - More affordable
@@ -89,16 +93,19 @@ But don't despair! With the right strategy, proper documentation, and realistic 
 ### Furnishing
 
 **Unmöbliert (Unfurnished)**:
+
 - Completely empty—often literally no kitchen, no light fixtures, no curtain rods
 - You must install your own kitchen (Einbauküche) or negotiate to buy the previous tenant's
 - Long-term solution
 - Most common
 
 **Teilmöbliert (Partially Furnished)**:
+
 - Usually includes kitchen and maybe some basics
 - Varies significantly
 
 **Möbliert (Furnished)**:
+
 - Fully equipped, ready to move in
 - More expensive (20-40% premium)
 - Often shorter-term leases
@@ -109,28 +116,33 @@ But don't despair! With the right strategy, proper documentation, and realistic 
 ### Online Portals (Most Common)
 
 **ImmobilienScout24** (immobilienscout24.de)
+
 - Largest platform in Germany
 - Most listings
 - Paid "Plus" membership (€15-30/month) gives advantages like application templates and earlier notification
 - **Tip**: Set up automated alerts immediately
 
 **WG-Gesucht** (wg-gesucht.de)
+
 - Best for shared apartments (WGs)
 - Also has some full apartments
 - Free to use
 - Very popular with students and young professionals
 
 **Immowelt** (immowelt.de)
+
 - Second-largest portal
 - Similar to ImmobilienScout24
 - Good for smaller cities
 
 **eBay Kleinanzeigen** (kleinanzeigen.de)
+
 - Classifieds platform
 - Mix of private landlords and agencies
 - Watch out for scams (never pay before seeing apartment!)
 
 **Facebook Groups**
+
 - City-specific groups: "[City Name] Housing" or "[City Name] WG Zimmer"
 - Expat groups often share leads
 - More informal, sometimes better luck with private landlords
@@ -138,16 +150,19 @@ But don't despair! With the right strategy, proper documentation, and realistic 
 ### Traditional Methods
 
 **Walking the neighborhood**:
+
 - Look for "Zu vermieten" (For Rent) signs on buildings
 - Contact property management companies directly
 - More common in smaller cities
 
 **Newspaper classifieds**:
+
 - Local newspapers still have rental sections
 - Older landlords may prefer this method
 - Worth checking in smaller towns
 
 **Word of mouth**:
+
 - Tell everyone you're looking
 - Colleagues, friends, acquaintances
 - Many apartments never hit public listings
@@ -155,16 +170,19 @@ But don't despair! With the right strategy, proper documentation, and realistic 
 ### Real Estate Agents (Makler)
 
 **How it works**:
+
 - Agents help find apartments (for a fee)
 - By law (since 2015), if the landlord hired the agent, the landlord pays the fee ("Bestellerprinzip")
 - If you hire an agent, you pay (typically 2 months' rent + VAT)
 
 **Pros**:
+
 - Access to exclusive listings
 - Agent handles viewings and paperwork
 - Can be worth it in extremely competitive markets
 
 **Cons**:
+
 - Expensive if you're paying
 - Some agents are unhelpful or push unsuitable apartments
 
@@ -175,27 +193,32 @@ Prepare these documents in advance—having them ready can give you a crucial ad
 ### Must-Have Documents
 
 **1. Schufa Selbstauskunft (Credit Report)**
+
 - Shows your creditworthiness
 - Order from meineschufa.de (€29.95 for instant report)
 - Valid for ~3 months
 - **Critical**: Poor Schufa = nearly impossible to rent
 
 **2. Mieterselbstauskunft (Tenant Self-Disclosure)**
+
 - Form with personal information, income, employment
 - Templates available online (ImmobilienScout24 provides one)
 - Landlords cannot legally require all information, but realistically, refusing to answer hurts your chances
 
 **3. Proof of Income (Einkommensnachweis)**
+
 - Last 3 payslips (Gehaltsabrechnungen)
 - Employment contract (Arbeitsvertrag)
 - **Rule of thumb**: Landlords want income of 3x the Warmmiete
 - **Example**: For €1,200 rent, you need €3,600+ net income
 
 **4. Previous Landlord Reference (Mietschuldenfreiheitsbescheinigung)**
+
 - Letter from previous landlord confirming you paid rent on time and left property in good condition
 - If coming from abroad, a reference letter from your previous landlord (translated to German)
 
 **5. Copy of ID/Passport**
+
 - Valid identification
 - Residence permit if non-EU
 
@@ -209,17 +232,20 @@ Prepare these documents in advance—having them ready can give you a crucial ad
 ### Special Situations
 
 **No Schufa yet (just arrived in Germany)**:
+
 - Explain you're new to Germany
 - Offer alternative proof of financial stability (bank statements, savings, job offer)
 - Some landlords accept letters from your home country's credit bureau
 - Be prepared for difficulty—consider temporary housing first
 
 **Self-employed/Freelancer**:
+
 - Last 3 tax returns
 - Bank statements
 - Possibly a Bürgschaft (guarantor)
 
 **Student**:
+
 - Enrollment certificate
 - Proof of financial support (parents, scholarship, savings)
 - Often need a parent to co-sign or provide Bürgschaft
@@ -241,10 +267,10 @@ Prepare these documents in advance—having them ready can give you a crucial ad
 ```
 Sehr geehrte/r Herr/Frau [Name],
 
-ich interessiere mich sehr für Ihre Wohnung in [Adresse]. Ich bin [Beruf] bei [Firma] 
+ich interessiere mich sehr für Ihre Wohnung in [Adresse]. Ich bin [Beruf] bei [Firma]
 und suche eine langfristige Wohnung in [Stadt].
 
-Gerne würde ich einen Besichtigungstermin vereinbaren. Ich kann Ihnen alle 
+Gerne würde ich einen Besichtigungstermin vereinbaren. Ich kann Ihnen alle
 erforderlichen Unterlagen (Schufa, Gehaltsabrechnungen, Mietschuldenfreiheits-
 bescheinigung) sofort zur Verfügung stellen.
 
@@ -259,12 +285,14 @@ Vielen Dank und freundliche Grüße,
 ### Step 3: Apartment Viewing (Besichtigung)
 
 **Prepare**:
+
 - Arrive 5 minutes early
 - Dress professionally (first impressions matter!)
 - Bring all documents in a neat folder
 - Prepare questions in German if possible
 
 **What to check**:
+
 - Water pressure and heating
 - Window quality (insulation)
 - Cell phone reception
@@ -275,6 +303,7 @@ Vielen Dank und freundliche Grüße,
 - How the neighborhood feels
 
 **What to ask**:
+
 - When is the apartment available?
 - What are the exact Nebenkosten?
 - Is there a Waschküche (laundry room) or are in-unit machines allowed?
@@ -284,6 +313,7 @@ Vielen Dank und freundliche Grüße,
 - What's the notice period?
 
 **Red flags**:
+
 - Landlord asks for money before signing contract
 - Apartment seems too good to be true for the price
 - Landlord is pushy or evasive about questions
@@ -292,6 +322,7 @@ Vielen Dank und freundliche Grüße,
 ### Step 4: Submit Your Application
 
 **Make yourself memorable (positively)**:
+
 - Be friendly and professional
 - Speak German if you can (even basic attempts are appreciated)
 - Highlight stability: long-term job, no plans to move soon
@@ -299,6 +330,7 @@ Vielen Dank und freundliche Grüße,
 - If you have special skills (handyman, gardener), mention them
 
 **Follow up**:
+
 - Send a thank-you email within 24 hours
 - Reiterate your interest
 - Provide any additional documents requested
@@ -312,17 +344,20 @@ Vielen Dank und freundliche Grüße,
 ### Step 6: Contract Signing
 
 **Mietvertrag (Rental Contract)**:
+
 - Read carefully (have a German-speaking friend help if needed)
 - Standard contracts are usually fair due to strong tenant protection laws
 - Check: rent amount, Nebenkosten, deposit, notice period, special conditions
 
 **Kaution (Deposit)**:
+
 - Typically 2-3 months' Kaltmiete
 - Must be placed in separate account (landlord cannot use it freely)
 - Returned within 3-6 months after moving out (minus any damages)
 - Can sometimes be paid in installments
 
 **Wohnungsübergabeprotokoll (Handover Protocol)**:
+
 - Document condition of apartment when moving in
 - Take photos of everything, especially any existing damage
 - Both you and landlord sign
@@ -331,37 +366,44 @@ Vielen Dank und freundliche Grüße,
 ## Tips for Success in a Competitive Market
 
 ### 1. Be Fast
+
 - Respond to new listings immediately
 - Have documents ready to send
 - Be available for viewings at short notice
 
 ### 2. Be Flexible
+
 - Consider less popular neighborhoods
 - Older buildings or higher floors (without elevator) have less competition
 - Slightly larger or smaller than ideal can open options
 
 ### 3. Improve Your Profile
+
 - Get your Schufa early
 - If possible, have your employer write a letter confirming permanent employment
 - Build savings (offering to pay several months upfront can help in competitive situations)
 
 ### 4. Network Aggressively
+
 - Join Facebook groups and introduce yourself
 - Ask colleagues if their buildings have vacancies
 - Attend expat meetups and mention you're looking
 
 ### 5. Consider Temporary Solutions
+
 - AirBnb for first month while you search
 - Hostels or hotels
 - WG (shared apartment) as stepping stone
 - Corporate housing through your employer
 
 ### 6. Learn Basic German
+
 - Even A1-level German helps with landlords
 - Shows commitment to staying long-term
 - Makes you more relatable
 
 ### 7. Look Beyond the Obvious
+
 - Check smaller portals
 - Look in neighboring suburbs with good transit
 - Consider cities outside the main metro (e.g., Potsdam instead of Berlin)
@@ -373,28 +415,32 @@ Vielen Dank und freundliche Grüße,
 🚫 **Price is suspiciously low for the area**  
 🚫 **Poor German/English in communications (copied from elsewhere)**  
 🚫 **Sends you "contract" to sign before you've seen the place**  
-🚫 **Asks for payment via Western Union, MoneyGram, or cryptocurrency**  
+🚫 **Asks for payment via Western Union, MoneyGram, or cryptocurrency**
 
 ✅ **Always view the apartment in person**  
 ✅ **Meet the landlord/agent face-to-face**  
 ✅ **Sign contract in person**  
 ✅ **Pay deposit only after signing and receiving keys**  
-✅ **Use bank transfer (Überweisung), never cash or untraceable methods**  
+✅ **Use bank transfer (Überweisung), never cash or untraceable methods**
 
 ## Timeline Expectations
 
 **Major cities (Berlin, Munich, Frankfurt, Hamburg)**:
+
 - 2-4 months if lucky
 - 6+ months not uncommon
 - Plan to start searching before you arrive if possible
 
 **Medium cities (Leipzig, Dresden, Nuremberg)**:
+
 - 1-3 months
 
 **Smaller cities/towns**:
+
 - 2-6 weeks
 
 **Factors that speed up the search**:
+
 - High income
 - Excellent Schufa
 - Fluent German
@@ -414,7 +460,7 @@ After signing the contract:
 
 ## Conclusion
 
-Finding an apartment in Germany requires patience, preparation, and persistence. The market is challenging, especially for newcomers, but every expat who has successfully navigated it had the same worries you do now. 
+Finding an apartment in Germany requires patience, preparation, and persistence. The market is challenging, especially for newcomers, but every expat who has successfully navigated it had the same worries you do now.
 
 Start early, get your documents in order, be professional and friendly, and don't give up. Your apartment is out there—it just might take longer than expected to find it.
 
@@ -429,4 +475,4 @@ Remember: Once you're in, tenant protections are strong, and you can make your G
 - [Financial & Legal Matters](/guide/financial-legal-matters) - Understanding contracts and your rights
 - [Opening a German Bank Account](/opening-german-bank-account-expats-guide) - Essential for apartment applications
 
-*Good luck with your apartment search! You've got this.*
+_Good luck with your apartment search! You've got this._

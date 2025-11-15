@@ -7,11 +7,13 @@ Change log and decision history for building the xPatLife website (Astro).
 ## 2025-01-28
 
 ### Removed Broken "Read More" Links
+
 - Removed 30 "Read more" links from guide section pages that pointed to non-existent sub-pages (causing 404 errors)
 - Affected sections: Housing & Accommodation, Transportation & Mobility, Planning Your Move, Healthcare & Insurance, Employment & Career, Financial & Legal Matters, Education & Language, Daily Life & Integration, Arrival and First Steps
 - Decision: Keep comprehensive content on section index pages without teaser links until sub-pages are created
 
 ### Navigation Updates
+
 - Updated `src/navigation.ts` to reflect xPatLife structure
 - Replaced template navigation with Guide dropdown containing 14 sections: Introduction, Planning Your Move, Arrival and First Steps, Healthcare & Insurance, Housing & Accommodation, Employment & Career, Education & Language, Transportation & Mobility, Daily Life & Integration, Financial & Legal Matters, Practical Resources, Conclusion, Appendices, Tax Declaration
 - Updated footer with xPatLife-specific sections (Guide, Resources, About, Legal)
@@ -78,7 +80,7 @@ Change log and decision history for building the xPatLife website (Astro).
 
 ---
 
-*Refer to the commit history for technical details on file changes and implemented features.*
+_Refer to the commit history for technical details on file changes and implemented features._
 
 ---
 

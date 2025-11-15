@@ -1,8 +1,8 @@
 ---
-title: "Terms of Service"
-seoTitle: "Terms of Service | xPatLife"
-description: "Terms and conditions for using the xPatLife website and services."
-layout: "~/layouts/MarkdownLayout.astro"
+title: 'Terms of Service'
+seoTitle: 'Terms of Service | xPatLife'
+description: 'Terms and conditions for using the xPatLife website and services.'
+layout: '~/layouts/MarkdownLayout.astro'
 ---
 
 **Last updated: November 15, 2025**
@@ -17,6 +17,7 @@ layout: "~/layouts/MarkdownLayout.astro"
 - You use this website entirely AT YOUR OWN RISK
 
 **For official, legally binding information, always consult:**
+
 - Official German government agencies (e.g., Ausländerbehörde, Finanzamt, BAMF)
 - Licensed immigration lawyers and consultants
 - Certified tax advisors (Steuerberater)
@@ -29,6 +30,7 @@ By accessing and using the xPatLife website ("the Site"), you accept and agree t
 ## 2. Description of Service
 
 xPatLife provides information, resources, and guidance for expatriates living and working in Germany. Our content includes:
+
 - Comprehensive guides on living in Germany
 - Blog articles on expatriate topics
 - Tools and resources for daily life
@@ -39,6 +41,7 @@ xPatLife provides information, resources, and guidance for expatriates living an
 ### 3.1 Personal Use
 
 All content on this website is provided for informational and educational purposes only. You may:
+
 - Read and browse content freely
 - Share links to our pages
 - Print or save content for personal, non-commercial use
@@ -46,6 +49,7 @@ All content on this website is provided for informational and educational purpos
 ### 3.2 Restrictions
 
 You may not:
+
 - Reproduce, republish, or redistribute content without permission
 - Use content for commercial purposes without authorization
 - Modify, adapt, or create derivative works
@@ -57,6 +61,7 @@ You may not:
 ### 4.1 Educational Project Disclaimer
 
 **CRITICAL NOTICE:** This website is a personal educational project for learning web development. It is NOT:
+
 - A professional information service
 - An official government resource
 - A substitute for professional advice
@@ -65,6 +70,7 @@ You may not:
 ### 4.2 No Guarantees or Warranties
 
 **We provide ZERO guarantees regarding:**
+
 - Accuracy of information provided
 - Completeness of content
 - Currency of regulations or procedures
@@ -76,6 +82,7 @@ You may not:
 ### 4.3 No Responsibility for Errors
 
 **We explicitly disclaim all responsibility for:**
+
 - Errors, inaccuracies, or omissions in content
 - Outdated information due to regulatory changes
 - Misinterpretation of information by users
@@ -84,6 +91,7 @@ You may not:
 - Lost opportunities or damages of any kind
 
 **You are solely responsible for:**
+
 - Verifying all information with official sources
 - Seeking professional advice for important decisions
 - Understanding that regulations may have changed since content publication
@@ -92,6 +100,7 @@ You may not:
 ### 4.4 Mandatory Verification
 
 Our content is for general information only and does not constitute:
+
 - Legal advice
 - Financial advice
 - Tax advice
@@ -99,6 +108,7 @@ Our content is for general information only and does not constitute:
 - Immigration consulting
 
 **BEFORE making ANY important decision, you MUST:**
+
 1. Consult official German government websites and agencies
 2. Seek advice from licensed professionals (lawyers, tax advisors, etc.)
 3. Verify current regulations and requirements
@@ -108,6 +118,7 @@ Our content is for general information only and does not constitute:
 ### 4.5 Not Professional Advice
 
 Our content is for general information only and does NOT constitute:
+
 - **Legal advice** - We are not lawyers or legal advisors
 - **Immigration advice** - We are not licensed immigration consultants
 - **Financial advice** - We are not financial planners or advisors
@@ -120,6 +131,7 @@ Our content is for general information only and does NOT constitute:
 ## 5. User Conduct
 
 You agree to:
+
 - Use the website lawfully and respectfully
 - Not engage in harmful or abusive behavior
 - Not attempt to compromise website security
@@ -129,6 +141,7 @@ You agree to:
 ## 6. Third-Party Links
 
 Our website may contain links to external websites. We:
+
 - Do not control third-party content
 - Are not responsible for external website policies or practices
 - Do not endorse linked websites
@@ -151,6 +164,7 @@ Your use of the website is also governed by our [Privacy Policy](/privacy-policy
 ## 9. Disclaimer of Warranties
 
 To the fullest extent permitted by law:
+
 - The website is provided "as is" and "as available"
 - We make no warranties, express or implied
 - We do not guarantee uninterrupted or error-free service
@@ -163,6 +177,7 @@ To the fullest extent permitted by law:
 ### 10.1 Complete Disclaimer
 
 We (xPatLife, its owner, contributors, and hosting provider Netlify) are NOT LIABLE for:
+
 - **Any damages whatsoever**, including but not limited to:
   - Direct, indirect, incidental, or consequential damages
   - Loss of profits, income, or opportunities
@@ -178,6 +193,7 @@ We (xPatLife, its owner, contributors, and hosting provider Netlify) are NOT LIA
 ### 10.2 Specific Scenarios
 
 We are specifically NOT RESPONSIBLE if:
+
 - You make a decision based on outdated information
 - Regulations changed after content was published
 - You misunderstood or misapplied information
@@ -195,6 +211,7 @@ Even if liability is found: Our total liability shall NEVER exceed €0 (zero eu
 ### 10.4 Hosting Provider
 
 **Netlify Disclaimer:** We are not responsible for any issues related to our hosting provider (Netlify), including but not limited to:
+
 - Server downtime or outages
 - Data breaches or security issues
 - Technical malfunctions
@@ -206,6 +223,7 @@ For Netlify's terms and policies, see: [https://www.netlify.com/legal/](https://
 ## 11. Indemnification
 
 You agree to indemnify and hold harmless xPatLife, its owners, and contributors from any claims, damages, or expenses arising from:
+
 - Your use of the website
 - Your violation of these terms
 - Your infringement of third-party rights
@@ -217,6 +235,7 @@ We reserve the right to modify these Terms of Service at any time. Changes will 
 ## 13. Changes to the Website
 
 We may:
+
 - Modify or discontinue any part of the website
 - Change content, features, or functionality
 - Suspend or terminate the website temporarily or permanently
@@ -270,4 +289,4 @@ Germany
 
 ---
 
-*By using this website, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.*
+_By using this website, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service._
