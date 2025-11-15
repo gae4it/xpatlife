@@ -30,16 +30,6 @@ const { language, textDirection } = I18N;
   <head>
     <CommonMeta />
     <Favicons />
-
-    <!-- Preload critical fonts -->
-    <link
-      rel="preload"
-      href="/_astro/inter-latin-wght-normal.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-
     <CustomStyles />
     <ApplyColorMode />
     <Metadata {...metadata} />
@@ -70,15 +60,6 @@ const { language, textDirection } = I18N;
       }
       gtag('js', new Date());
       gtag('config', 'G-30WVJD55QS');
-    </script>
-
-    <!-- Optimize font loading - prevent FOIT (Flash of Invisible Text) -->
-    <script is:inline>
-      if ('fonts' in document) {
-        Promise.all([document.fonts.load('1rem Inter Variable')]).then(() => {
-          document.documentElement.classList.add('fonts-loaded');
-        });
-      }
     </script>
 
     <!-- Comment the line below to disable View Transitions -->
