@@ -1,7 +1,7 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import airportImage from '~/assets/images/airport.webp';
-
+import SmartSteuerPromoMini from '~/components/common/SmartSteuerPromoMini.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
@@ -358,6 +358,8 @@ const metadata = {
     ]}
   />
 
+  <SmartSteuerPromoMini />
+  
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
@@ -379,5 +381,8 @@ const metadata = {
     <Fragment slot="subtitle">
       Explore our comprehensive guide and expert blog articles to make your move to Germany smooth and successful.
     </Fragment>
+
+    
+
   </CallToAction>
 </Layout>
