@@ -1,0 +1,103 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import GuideCard from '~/components/guide/GuideCard.astro';
+
+const metadata = {
+  title: 'Complete Guide to Germany',
+  description: 'Your comprehensive guide to living in Germany as an expat.',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Section -->
+  <Hero
+    tagline="Living in Germany"
+    title="Complete Expat Guide"
+    subtitle="Everything you need to know about settling and thriving in Germany"
+  />
+
+  <!-- Guide Cards Section -->
+  <div class="max-w-4xl mx-auto px-4 py-16">
+    <div class="flex flex-col gap-6 w-full">
+      <GuideCard
+        title="Arrival and First Steps"
+        description="Start your journey in Germany: registration, essential services, and first things to do."
+        href="/guide/arrival-and-first-steps"
+        image="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+      />
+      <GuideCard
+        title="Planning Your Move"
+        description="How to prepare for your relocation: documents, packing, and travel tips."
+        href="/guide/planning-your-move"
+        image="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80"
+      />
+      <GuideCard
+        title="Housing & Accommodation"
+        description="Find a place to live: renting, buying, and understanding German housing."
+        href="/guide/housing-accommodation"
+        image="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=400&q=80"
+      />
+      <GuideCard
+        title="Healthcare & Insurance"
+        description="Get covered: health insurance, doctors, and medical care in Germany."
+        href="/guide/healthcare-insurance"
+        image="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=400&q=80"
+      />
+      <GuideCard
+        title="Education & Language"
+        description="Schools, universities, and learning German for expats."
+        href="/guide/education-language"
+        image="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=400&q=80"
+      />
+      <GuideCard
+        title="Employment & Career"
+        description="Jobs, work permits, and building your career in Germany."
+        href="/guide/employment-career"
+        image="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80"
+      />
+      <GuideCard
+        title="Financial & Legal Matters"
+        description="Banking, taxes, and legal essentials for newcomers."
+        href="/guide/financial-legal-matters"
+        image="https://images.unsplash.com/photo-1523289333742-be1143f6b766?auto=format&fit=crop&w=400&q=80"
+      />
+      <GuideCard
+        title="Transportation & Mobility"
+        description="Getting around: public transport, driving, and mobility tips."
+        href="/guide/transportation-mobility"
+        image="https://images.unsplash.com/photo-1489824904134-891ab64532f1?auto=format&fit=crop&w=400&q=80"
+      />
+      <GuideCard
+        title="Daily Life & Integration"
+        description="Culture, social life, and integrating into German society."
+        href="/guide/daily-life-integration"
+        image="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80"
+      />
+      <GuideCard
+        title="Tax Declaration"
+        description="How to file your taxes and understand the German tax system."
+        href="/guide/tax-declaration"
+        image="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80"
+      />
+      <GuideCard
+        title="Practical Resources"
+        description="Useful links, contacts, and resources for expats."
+        href="/guide/practical-resources"
+        image="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=400&q=80"
+      />
+      <GuideCard
+        title="Appendices"
+        description="Extra information and reference material."
+        href="/guide/appendices"
+        image="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80"
+      />
+      <GuideCard
+        title="Conclusion"
+        description="Final tips and summary for your expat journey."
+        href="/guide/conclusion"
+        image="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=400&q=80"
+      />
+    </div>
+  </div>
+</Layout>

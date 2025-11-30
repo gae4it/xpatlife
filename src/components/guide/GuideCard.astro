@@ -1,0 +1,18 @@
+---
+// Props: title, description, href, image (optional)
+const { title, description, href, image } = Astro.props;
+---
+
+<div class="intersect-once motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade">
+  <a href={href} class="block w-full">
+    <div
+      class="w-full flex items-center gap-6 p-6 rounded-lg bg-white dark:bg-gray-900 shadow transition-none hover:shadow-lg"
+    >
+      {image && <img src={image} alt={title} class="w-24 h-24 object-cover rounded-md flex-shrink-0" />}
+      <div class="flex-1">
+        <h2 class="text-2xl font-bold mb-2">{title}</h2>
+        <p class="text-base text-gray-700 dark:text-gray-300">{description}</p>
+      </div>
+    </div>
+  </a>
+</div>

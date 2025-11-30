@@ -6,7 +6,6 @@ import BlogList from '~/components/blog/List.astro';
 import Headline from '~/components/blog/Headline.astro';
 import Pagination from '~/components/blog/Pagination.astro';
 import { getPermalink } from '~/utils/permalinks';
-// import PostTags from "~/components/blog/Tags.astro";
 
 import { blogListRobots, getStaticPathsBlogList, fetchPosts } from '~/utils/blog';
 
@@ -52,7 +51,7 @@ const metadata = {
 
     {
       categories.length > 0 && (
-        <div class="mb-12">
+        <div class="mb-12 intersect-once motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade">
           <div class="flex flex-wrap justify-center gap-3">
             {categories.map((category) => (
               <a
