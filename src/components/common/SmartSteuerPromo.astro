@@ -1,15 +1,17 @@
 ---
 // SmartSteuerPromo.astro
+import smartsteuerLogo from '../../assets/images/smartsteuer-logo.png';
+import smartsteuerWebsite from '../../assets/images/smartsteuer-website.png';
 ---
 
 <div class="flex flex-col items-center gap-6 my-5 rounded-xl bg-white p-8 max-w-2xl mx-auto shadow">
-  <img src="/src/assets/images/smartsteuer-logo.png" alt="SmartSteuer Logo" class="h-12 w-auto mb-2" />
+  <img src={smartsteuerLogo.src} alt="SmartSteuer Logo" class="h-12 w-auto mb-2" />
   <h2 class="text-xl font-bold text-center text-blue-900 max-w-lg mx-auto mt-0 mb-2">
     <span class="text-red-600 text-2xl font-extrabold">Save 10%</span><br /> on Your First German Tax Declaration with SmartSteuer
     and xPatLife!
   </h2>
   <img
-    src="/src/assets/images/smartsteuer-website.png"
+    src={smartsteuerWebsite.src}
     alt="SmartSteuer Website Screenshot"
     class="w-full rounded-lg shadow mb-2"
   />
@@ -19,7 +21,7 @@
   </p>
   <a
     href="https://kwk.smartsteuer.de/recruited/start/12733f15-7b0e-4403-8024-1f3ae9c71bec"
-    class="inline-block bg-blue-900 text-white font-semibold px-6 py-3 rounded-full text-base shadow hover:bg-blue-800 transition"
-    >Get Your SmartSteuer Discount →</a
+    class="inline-block bg-blue-900 text-white font-semibold px-6 py-3 rounded-full text-base shadow hover:bg-blue-800 transition no-underline"
+    >Get Your SmartSteuer Discount!</a
   >
 </div>
