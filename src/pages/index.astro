@@ -1,5 +1,6 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
+import airportImage from '~/assets/images/airport.webp';
 
 import Hero from '~/components/widgets/Hero.astro';
 import Features from '~/components/widgets/Features.astro';
@@ -30,7 +31,7 @@ const metadata = {
       },
       { text: 'Learn more', href: '#features' },
     ]}
-    image={{ src: '~/assets/images/airport.jpg', alt: 'xPatLife' }}
+    image={{ src: airportImage, alt: 'xPatLife' }}
   >
     <Fragment slot="title">
       xPatLife
@@ -350,9 +351,9 @@ const metadata = {
 
   <Stats
     stats={[
-      { title: 'Guide Sections', amount: '10+' },
+      { title: 'Guide Chapters', amount: '10+' },
       { title: 'Topics Covered', amount: '50+' },
-      { title: 'Blog Articles', amount: '4' },
+      { title: 'Blog Articles', amount: '10+' },
       { title: 'Free Resources', amount: '100%' },
     ]}
   />

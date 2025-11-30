@@ -526,6 +526,8 @@ _Example: For 2024 taxes, deadline is July 31, 2025 (or Feb 28, 2027 with adviso
 
 Return to [Financial & Legal Matters](/guide/financial-legal-matters) or explore other [Guide sections](/guide).
 
+_Don't leave €1,000+ on the table - file your tax return and get your money back!_
+
 ---
 
-_Don't leave €1,000+ on the table - file your tax return and get your money back!_
+👉 Check the best tax declaration software for Germany and get 10% off your first payment! [SmartSteuer - Best Tax Declaration Software](~/pages/smartsteuer-best-german-tax-declaration-software)

@@ -134,6 +134,6 @@ export const footerData = {
   ],
   socialLinks: [],
   footNote: `
-    ⚠️ <strong>Educational Project:</strong> This website is for learning purposes only. Information may be inaccurate or outdated. <a href="/disclaimer" class="underline">Read full disclaimer</a> <br> Made with ❤️ for expats in Germany · xPatLife ${new Date().getFullYear()} · All rights reserved.
+    ⚠️ <strong>Educational Project:</strong> This website is for learning purposes only. Information may be inaccurate or outdated.<br> <a href="/disclaimer" class="underline">Read full disclaimer</a> <br> <br> Made with ❤️ for expats in Germany · xPatLife ${new Date().getFullYear()} · All rights reserved.
   `,
 };

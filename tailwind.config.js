@@ -18,7 +18,9 @@ export default {
         serif: ['var(--aw-font-serif, ui-serif)', ...defaultTheme.fontFamily.serif],
         heading: ['var(--aw-font-heading, ui-sans-serif)', ...defaultTheme.fontFamily.sans],
       },
-
+      screens: {
+        'lg-nav': '970px',
+      },
       animation: {
         fade: 'fadeInUp 1s both',
       },
