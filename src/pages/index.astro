@@ -2,6 +2,7 @@
 import Layout from '~/layouts/PageLayout.astro';
 import airportImage from '~/assets/images/airport.webp';
 import SmartSteuerPromoMini from '~/components/common/SmartSteuerPromoMini.astro';
+import SiteSearch from '~/components/common/SiteSearch.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
@@ -19,6 +20,7 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
+  
   <!-- Hero Widget ******************* -->
 
   <Hero
@@ -33,15 +35,26 @@ const metadata = {
     ]}
     image={{ src: airportImage, alt: 'xPatLife' }}
   >
+
+    <!-- TITLE -->
     <Fragment slot="title">
       xPatLife
       <br />
       <span class="text-3xl md:text-4xl">Living and Working in Germany</span>
     </Fragment>
 
+    <!-- SUBTITLE -->
     <Fragment slot="subtitle">
       A Practical and Legal Guide for <span class="font-semibold">Expats</span>
     </Fragment>
+
+    <!-- SITE SEARCH -->
+    <Fragment slot="content">
+      <div class="mt-6 max-w-xl mx-auto">
+        <SiteSearch />
+      </div>
+    </Fragment>
+    
   </Hero>
 
   <!-- Note Widget ******************* -->

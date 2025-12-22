@@ -1,5 +1,13 @@
 # 🌍 xPatLife
 
+## 🆕 Recent Updates (2025-12-22)
+
+- **Dynamic homepage search bar**: Added a typeahead search bar to the homepage hero section. It suggests the best-matching pages, blog posts, guides, and tools across the site (excluding legal/disclaimer pages). Results are limited to 5, with visual pill labels for content type.
+- **Search index endpoint**: New `/search-index.json` API route indexes all content for instant client-side search.
+- **Tooling scripts**: Added `npm run check` (runs ESLint, Prettier check, and TypeScript `tsc --noEmit`) and `npm run fix` (auto-fixes lint and formatting). All lint and formatting errors fixed.
+- **TypeScript compatibility**: Added ambient `declare module '*.astro'` to support `.astro` imports in dependencies. Updated `tsconfig.json` for stricter includes and compatibility.
+- **Dependency updates**: All npm dependencies updated to latest stable. Tailwind CSS pinned to v3.4.x for compatibility with `@astrojs/tailwind@6`.
+
 **xPatLife: Living and Working in Germany** - A comprehensive, SEO-optimized guide for expats built with **[Astro 5.0](https://astro.build/) + [Tailwind CSS](https://tailwindcss.com/)**.
 
 This website transforms a 170-page book into an accessible, modern web experience, providing practical and legal guidance for expats navigating life in Germany.
@@ -265,11 +273,20 @@ author: 'xPatLife Team'
 | `npm run build`   | Build production site to `./dist/`         |
 | `npm run preview` | Preview production build locally           |
 | `npm run check`   | Check project for errors                   |
-| `npm run fix`     | Run Eslint and format with Prettier        |
+| `npm run fix`     | Run ESLint --fix and Prettier --write      |
+| `npm run check:tsc` | Run TypeScript type-check only (no emit) |
 
 <br>
 
 ## License
+
+---
+
+**Search Bar Usage:**
+
+- The homepage features a dynamic search bar in the hero section. Start typing to see instant suggestions from all guides, blog posts, and tools. Legal/disclaimer pages are excluded. Use arrow keys or mouse to navigate results. Only the top 5 matches are shown, with a pill label for content type.
+
+---
 
 See [LICENSE](./LICENSE.md) for details.
 

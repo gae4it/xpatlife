@@ -1,0 +1,326 @@
+---
+export interface Props {
+  endpoint?: string;
+  placeholder?: string;
+  class?: string;
+}
+
+const { endpoint = '/search-index.json', placeholder = 'Search the site…', class: className = '' } = Astro.props;
+---
+
+<div
+  class={`relative z-[10] intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade ${className}`}
+  data-aw-site-search
+>
+  <label class="sr-only" for="site-search-input">Search</label>
+  <div class="relative">
+    <input
+      id="site-search-input"
+      type="search"
+      autocomplete="off"
+      spellcheck="false"
+      placeholder={placeholder}
+      class="py-3 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
+      role="combobox"
+      aria-autocomplete="list"
+      aria-expanded="false"
+      aria-controls="site-search-results"
+    />
+
+    <div
+      id="site-search-results"
+      class="hidden absolute z-[20] mt-2 w-full rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900 text-left overflow-hidden"
+      role="listbox"
+    >
+    </div>
+  </div>
+
+  <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Try: anmeldung, health insurance, taxes, brutto netto</p>
+</div>
+
+<script is:inline data-astro-rerun define:vars={{ endpoint }}>
+  const TYPE_LABELS = {
+    blog: 'Blog',
+    guide: 'Guide',
+    tool: 'Tool',
+    page: 'Page',
+  };
+
+  function normalize(str) {
+    const raw = (str || '').toString().toLowerCase();
+    // Avoid Unicode property escapes (e.g. /\p{Diacritic}/u) for broader browser support.
+    const withoutDiacritics = raw.normalize ? raw.normalize('NFD').replace(/[\u0300-\u036f]/g, '') : raw;
+    return withoutDiacritics.replace(/\s+/g, ' ').trim();
+  }
+
+  function scoreItem(item, query, terms) {
+    const title = item.__n_title;
+    const description = item.__n_description;
+    const keywords = item.__n_keywords;
+    const text = item.__n_text;
+
+    let score = 0;
+
+    // Strong exact starts-with on title
+    if (title.startsWith(query)) score += 200;
+    // Substring on title
+    if (title.includes(query)) score += 120;
+
+    // Prefer matching all terms in title
+    for (const term of terms) {
+      if (!term) continue;
+      if (title.includes(term)) score += 50;
+      else if (keywords.includes(term)) score += 20;
+      else if (description.includes(term)) score += 10;
+      else if (text.includes(term)) score += 2;
+      else score -= 5;
+    }
+
+    // Minor bias toward non-page content
+    if (item.type === 'guide') score += 4;
+    if (item.type === 'tool') score += 3;
+    if (item.type === 'blog') score += 2;
+
+    return score;
+  }
+
+  async function loadIndex() {
+    const cacheKey = '__aw_site_search_index_v1';
+    if (window[cacheKey]) return window[cacheKey];
+
+    const res = await fetch(endpoint, { headers: { Accept: 'application/json' } });
+    if (!res.ok) throw new Error('Search index fetch failed');
+
+    const items = await res.json();
+
+    for (const item of items) {
+      item.__n_title = normalize(item.title);
+      item.__n_description = normalize(item.description || '');
+      item.__n_keywords = normalize((item.keywords || []).join(' '));
+      item.__n_text = normalize(item.text || '');
+    }
+
+    window[cacheKey] = items;
+    return items;
+  }
+
+  function initSearch(root) {
+    const input = root.querySelector('#site-search-input');
+    const results = root.querySelector('#site-search-results');
+    if (!input || !results) return;
+
+    let index = null;
+    let activeIndex = -1;
+    let lastQuery = '';
+    let blurTimer = null;
+
+    const ensureIndex = async () => {
+      if (index) return index;
+      index = await loadIndex();
+      return index;
+    };
+
+    const hide = () => {
+      results.classList.add('hidden');
+      results.innerHTML = '';
+      activeIndex = -1;
+      input.setAttribute('aria-expanded', 'false');
+    };
+
+    const show = () => {
+      results.classList.remove('hidden');
+      input.setAttribute('aria-expanded', 'true');
+    };
+
+    const setActive = (next) => {
+      const options = Array.from(results.querySelectorAll('[role="option"]'));
+      if (!options.length) {
+        activeIndex = -1;
+        return;
+      }
+
+      activeIndex = Math.max(0, Math.min(next, options.length - 1));
+
+      options.forEach((el, i) => {
+        if (i === activeIndex) {
+          el.setAttribute('aria-selected', 'true');
+          el.classList.add('bg-gray-100');
+          el.classList.add('dark:bg-slate-800');
+          el.scrollIntoView({ block: 'nearest' });
+        } else {
+          el.setAttribute('aria-selected', 'false');
+          el.classList.remove('bg-gray-100');
+          el.classList.remove('dark:bg-slate-800');
+        }
+      });
+    };
+
+    const render = (items) => {
+      if (!items.length) {
+        hide();
+        return;
+      }
+
+      results.innerHTML = items
+        .map((item, i) => {
+          const typeLabel = TYPE_LABELS[item.type] || 'Page';
+          const description = item.description
+            ? `<div class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2">${item.description}</div>`
+            : '';
+
+          return `
+            <a
+              href="${item.url}"
+              role="option"
+              aria-selected="false"
+              data-index="${i}"
+              class="block px-4 py-3 border-b border-gray-100 dark:border-slate-800 last:border-b-0 hover:bg-gray-100 dark:hover:bg-slate-800 active:bg-gray-100 dark:active:bg-slate-800"
+            >
+              <div class="flex items-start gap-3">
+                <div class="min-w-0 flex-1">
+                  <div class="font-medium dark:text-slate-200 truncate">${item.title}</div>
+                  ${description}
+                </div>
+                <div class="shrink-0">
+                  <span class="bg-gray-100 dark:bg-slate-700 inline-block py-0.5 px-2 lowercase font-medium text-xs text-muted dark:text-slate-300">${typeLabel}</span>
+                </div>
+              </div>
+            </a>
+          `.trim();
+        })
+        .join('');
+
+      show();
+      // Do not pre-select the first item visually.
+      activeIndex = -1;
+    };
+
+    const search = async (rawQuery) => {
+      const query = normalize(rawQuery);
+      if (query === lastQuery) return;
+      lastQuery = query;
+
+      if (query.length < 2) {
+        hide();
+        return;
+      }
+
+      let items;
+      try {
+        items = await ensureIndex();
+      } catch {
+        hide();
+        return;
+      }
+
+      const terms = query.split(' ').filter(Boolean);
+
+      const scored = items
+        .map((item) => ({ item, score: scoreItem(item, query, terms) }))
+        .filter((x) => x.score > 0)
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 5)
+        .map((x) => x.item);
+
+      render(scored);
+    };
+
+    const onInput = () => search(input.value);
+
+    input.addEventListener('input', onInput);
+    input.addEventListener('focus', () => {
+      if (blurTimer) clearTimeout(blurTimer);
+      if (input.value && results.innerHTML.trim()) show();
+    });
+
+    input.addEventListener('blur', () => {
+      blurTimer = setTimeout(() => hide(), 120);
+    });
+
+    results.addEventListener('mousedown', () => {
+      // Prevent blur before click
+      if (blurTimer) clearTimeout(blurTimer);
+    });
+
+    input.addEventListener('keydown', (e) => {
+      const options = Array.from(results.querySelectorAll('[role="option"]'));
+
+      if (e.key === 'Escape') {
+        hide();
+        input.blur();
+        return;
+      }
+
+      if (e.key === 'ArrowDown') {
+        if (results.classList.contains('hidden')) {
+          search(input.value);
+          return;
+        }
+        e.preventDefault();
+        setActive(activeIndex < 0 ? 0 : activeIndex + 1);
+        return;
+      }
+
+      if (e.key === 'ArrowUp') {
+        if (results.classList.contains('hidden')) return;
+        e.preventDefault();
+        setActive(activeIndex < 0 ? options.length - 1 : activeIndex - 1);
+        return;
+      }
+
+      if (e.key === 'Enter') {
+        if (results.classList.contains('hidden')) return;
+        const targetIndex = activeIndex >= 0 ? activeIndex : 0;
+        if (targetIndex < 0 || targetIndex >= options.length) return;
+        const href = options[targetIndex].getAttribute('href');
+        if (!href) return;
+        window.location.assign(href);
+      }
+    });
+
+    // Mouse hover should feel like "selected".
+    results.addEventListener('mousemove', (e) => {
+      const option = e.target?.closest?.('[role="option"]');
+      if (!option) return;
+      const idx = Number(option.getAttribute('data-index'));
+      if (!Number.isFinite(idx)) return;
+      if (idx === activeIndex) return;
+      setActive(idx);
+    });
+
+    results.addEventListener('mouseleave', () => {
+      // Remove keyboard/mouse selected highlight when leaving the list.
+      const options = Array.from(results.querySelectorAll('[role="option"]'));
+      options.forEach((el) => {
+        el.setAttribute('aria-selected', 'false');
+        el.classList.remove('bg-gray-100');
+        el.classList.remove('dark:bg-slate-800');
+      });
+      activeIndex = -1;
+    });
+
+    // Prefetch index lazily on first interaction
+    let prefetched = false;
+    input.addEventListener(
+      'pointerdown',
+      () => {
+        if (prefetched) return;
+        prefetched = true;
+        ensureIndex().catch(() => {});
+      },
+      { once: true }
+    );
+  }
+
+  function boot() {
+    const roots = document.querySelectorAll('[data-aw-site-search]');
+    roots.forEach((root) => {
+      if (root.__awSiteSearchInit) return;
+      root.__awSiteSearchInit = true;
+      initSearch(root);
+    });
+  }
+
+  boot();
+  document.addEventListener('astro:after-swap', boot);
+</script>
