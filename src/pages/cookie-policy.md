@@ -5,7 +5,7 @@ description: 'Learn about how xPatLife uses cookies and similar tracking technol
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-**Last updated: November 15, 2025**
+**Last updated: December 22, 2025**
 
 ## What Are Cookies?
 
@@ -28,6 +28,7 @@ These cookies are necessary for the website to function properly and cannot be d
 These cookies help us understand how visitors interact with our website:
 
 - Google Analytics - tracks page views, user behavior, and traffic sources
+- Cronitor RUM (Real User Monitoring) - helps us measure website performance and reliability (e.g., load times and errors)
 - Performance monitoring
 - Error tracking
 
@@ -77,6 +78,7 @@ You can change your preferences at any time by clearing your browser cookies and
 Some cookies are set by third-party services we use:
 
 - **Google Analytics** - Analyzes website traffic and user behavior
+- **Cronitor RUM (Real User Monitoring)** - Measures website performance and reliability
 - **Social Media Platforms** - Enable social sharing features
 
 These third parties have their own cookie policies.
