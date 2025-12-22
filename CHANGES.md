@@ -2,6 +2,17 @@
 
 Change log and decision history for building the xPatLife website (Astro).
 
+## 2025-12-22
+
+### Dynamic Site Search & Tooling Improvements
+
+- **Dynamic homepage search bar**: Added a typeahead search bar to the homepage hero section. It suggests the best-matching pages, blog posts, guides, and tools across the site (excluding legal/disclaimer pages). Results are limited to 5, with visual pill labels for content type.
+- **Search index endpoint**: Implemented `/search-index.json` API route. Indexes all blog posts (with permalinks, tags, and excerpt), all guide and tool markdown pages (with frontmatter and stripped text), and Astro pages (with metadata extraction). Excludes legal, disclaimer, and 404 pages. Deduplication by URL.
+- **Client-side search logic**: Normalizes and scores results by title, keywords, description, and body text. Supports keyboard and mouse navigation, fade-in animation, and overlays hero image.
+- **Tooling scripts**: Added `npm run check` (runs ESLint, Prettier check, and TypeScript `tsc --noEmit`) and `npm run fix` (auto-fixes lint and formatting). Fixed all lint and formatting errors.
+- **TypeScript compatibility**: Added ambient `declare module '*.astro'` to support `.astro` imports in dependencies (e.g., `@astrolib/seo`). Updated `tsconfig.json` for stricter includes and compatibility.
+- **Dependency updates**: Updated all npm dependencies to latest stable versions. Tailwind CSS pinned to v3.4.x for compatibility with `@astrojs/tailwind@6`.
+
 ---
 
 ## 2025-01-28
