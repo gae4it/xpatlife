@@ -62,6 +62,14 @@ const { language, textDirection } = I18N;
       gtag('config', 'G-30WVJD55QS');
     </script>
 
+    <!-- Cronitor RUM -->
+    <script async src="https://rum.cronitor.io/script.js"></script>
+    <script>
+        window.cronitor = window.cronitor || function() { (window.cronitor.q = window.cronitor.q || []).push(arguments); };
+        cronitor('config', { clientKey: '6755463edd3042b35c4089be9b94501f' });
+    </script>
+
+
     <!-- Comment the line below to disable View Transitions -->
     <ClientRouter fallback="swap" />
   </head>
