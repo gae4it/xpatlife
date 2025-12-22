@@ -7,8 +7,9 @@
   <div class="cookie-consent-container">
     <div class="cookie-consent-content">
       <p class="cookie-consent-text max-w-lg">
-        We use cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept All", you
-        consent to our use of cookies.
+        We use cookies and similar technologies to enhance your browsing experience and measure traffic/performance
+        (including Google Analytics, Cronitor RUM, and Cloudflare Web Analytics). By clicking "Accept All", you consent
+        to their use.
         <a href="/cookie-policy" class="cookie-consent-link">Read our Cookie Policy</a>
       </p>
       <div class="cookie-consent-buttons">
@@ -129,14 +130,9 @@
     const consent = localStorage.getItem(COOKIE_CONSENT_KEY);
     if (!consent) {
       cookieBanner?.classList.remove('hidden');
-    } else if (consent === 'all' && typeof window !== 'undefined' && window.gtag) {
-      // Re-apply consent on page load if previously accepted
-      window.gtag('consent', 'update', {
-        ad_storage: 'granted',
-        ad_user_data: 'granted',
-        ad_personalization: 'granted',
-        analytics_storage: 'granted',
-      });
+    } else if (consent === 'all' && typeof window !== 'undefined') {
+      // Load analytics only if previously accepted
+      window.__xpatlife_enableAnalytics?.();
     }
   }
 
@@ -148,14 +144,7 @@
     // Update Google Consent Mode based on user choice
     if (choice === 'all') {
       // Enable all cookies (analytics, tracking, etc.)
-      if (typeof window !== 'undefined' && window.gtag) {
-        window.gtag('consent', 'update', {
-          ad_storage: 'granted',
-          ad_user_data: 'granted',
-          ad_personalization: 'granted',
-          analytics_storage: 'granted',
-        });
-      }
+      if (typeof window !== 'undefined') window.__xpatlife_enableAnalytics?.();
       console.log('All cookies accepted');
     } else if (choice === 'necessary') {
       // Keep analytics and ads denied (already default)
