@@ -29,6 +29,7 @@ These cookies help us understand how visitors interact with our website:
 
 - Google Analytics - tracks page views, user behavior, and traffic sources
 - Cronitor RUM (Real User Monitoring) - helps us measure website performance and reliability (e.g., load times and errors)
+- Cloudflare Web Analytics - helps us understand traffic and usage in a privacy-focused way (Cloudflare states it is designed to be cookie-less; however, it may still process technical request data)
 - Performance monitoring
 - Error tracking
 
@@ -79,6 +80,7 @@ Some cookies are set by third-party services we use:
 
 - **Google Analytics** - Analyzes website traffic and user behavior
 - **Cronitor RUM (Real User Monitoring)** - Measures website performance and reliability
+- **Cloudflare Web Analytics** - Measures website traffic and basic usage statistics
 - **Social Media Platforms** - Enable social sharing features
 
 These third parties have their own cookie policies.
