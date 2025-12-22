@@ -5,7 +5,7 @@ description: 'Privacy policy for xPatLife - Learn how we collect, use, and prote
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-**Last updated: November 15, 2025**
+**Last updated: December 22, 2025**
 
 ## Important Disclaimer
 
@@ -71,10 +71,13 @@ You can control cookies through your browser settings. However, disabling cookie
 We may use third-party services that collect, monitor, and analyze data, including:
 
 - **Google Analytics** - To understand website usage and improve user experience
+- **Cronitor RUM (Real User Monitoring)** - To measure website performance and reliability (e.g., page load timing, errors). This may involve processing technical and usage data such as page URLs, device/browser information, and IP address.
 - **Social Media Platforms** - If you share our content on social media
 - **Content Delivery Networks** - To optimize website performance
 
 These third parties have their own privacy policies governing their use of your information.
+
+For Cronitor, see their documentation and privacy information: https://cronitor.io/
 
 ## Data Sharing and Disclosure
 

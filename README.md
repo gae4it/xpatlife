@@ -266,15 +266,15 @@ author: 'xPatLife Team'
 
 ## 🛠️ Commands Reference
 
-| Command           | Action                                     |
-| :---------------- | :----------------------------------------- |
-| `npm install`     | Install dependencies                       |
-| `npm run dev`     | Start local dev server at `localhost:4321` |
-| `npm run build`   | Build production site to `./dist/`         |
-| `npm run preview` | Preview production build locally           |
-| `npm run check`   | Check project for errors                   |
-| `npm run fix`     | Run ESLint --fix and Prettier --write      |
-| `npm run check:tsc` | Run TypeScript type-check only (no emit) |
+| Command             | Action                                     |
+| :------------------ | :----------------------------------------- |
+| `npm install`       | Install dependencies                       |
+| `npm run dev`       | Start local dev server at `localhost:4321` |
+| `npm run build`     | Build production site to `./dist/`         |
+| `npm run preview`   | Preview production build locally           |
+| `npm run check`     | Check project for errors                   |
+| `npm run fix`       | Run ESLint --fix and Prettier --write      |
+| `npm run check:tsc` | Run TypeScript type-check only (no emit)   |
 
 <br>
 
