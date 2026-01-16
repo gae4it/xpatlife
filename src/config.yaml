@@ -18,13 +18,13 @@ metadata:
   openGraph:
     site_name: xPatLife
     images:
-      - url: '~/assets/images/default.png'
+      - url: '~/assets/images/og-home.png'
         width: 1200
-        height: 628
+        height: 630
     type: website
   twitter:
-    handle: '@onwidget'
-    site: '@onwidget'
+    handle: '@xpatlife'
+    site: '@xpatlife'
     cardType: summary_large_image
 
 i18n:
