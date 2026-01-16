@@ -1,6 +1,7 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import airportImage from '~/assets/images/airport.webp';
+import ogHomeImage from '~/assets/images/og-home.png';
 import SmartSteuerPromoMini from '~/components/common/SmartSteuerPromoMini.astro';
 import SiteSearch from '~/components/common/SiteSearch.astro';
 import Hero from '~/components/widgets/Hero.astro';
@@ -25,17 +26,11 @@ const metadata = {
       'Your comprehensive guide to living and working in Germany as an expat. Practical advice on immigration, healthcare, housing, employment, and integrating into German life.',
     type: 'website',
     url: 'https://xpatlife.netlify.app/',
-    images: [
-      {
-        url: 'https://xpatlife.netlify.app/images/og-home.png',
-        width: 1200,
-        height: 630,
-      },
-    ],
   },
   twitter: {
     handle: '@xpatlife',
     card: 'summary_large_image',
+    image: ogHomeImage.src,
   },
 };
 ---
