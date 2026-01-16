@@ -16,6 +16,27 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
 const metadata = {
   title: 'xPatLife: Your Guide to Living and Working in Germany',
   ignoreTitleTemplate: true,
+  description:
+    'Your comprehensive guide to living and working in Germany as an expat. Practical advice on immigration, healthcare, housing, employment, and integrating into German life.',
+  canonical: 'https://xpatlife.netlify.app/',
+  openGraph: {
+    title: 'xPatLife: Your Guide to Living and Working in Germany',
+    description:
+      'Your comprehensive guide to living and working in Germany as an expat. Practical advice on immigration, healthcare, housing, employment, and integrating into German life.',
+    type: 'website',
+    url: 'https://xpatlife.netlify.app/',
+    images: [
+      {
+        url: 'https://xpatlife.netlify.app/images/og-home.png',
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+  twitter: {
+    handle: '@xpatlife',
+    card: 'summary_large_image',
+  },
 };
 ---
 
