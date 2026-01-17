@@ -1,0 +1,114 @@
+---
+// Component for displaying PWA installation prompt
+// Compatible with Android (Chrome, Firefox, Edge) and iOS (Safari 16.4+)
+// No external dependencies required - lightweight
+import { Icon } from 'astro-icon/components';
+---
+
+<div id="install-prompt-container" class="py-4">
+  <!-- iOS Instructions (shown for Safari on iOS) -->
+  <div
+    id="ios-instructions"
+    class="hidden bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-800 rounded-lg p-6 mb-6"
+  >
+    <h3 class="text-lg font-semibold text-blue-900 dark:text-blue-100 mb-3 flex items-center gap-2">
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+        <path
+          d="M17.05 13.5c-.91 0-1.82-.33-2.5-1.02C13.36 11.56 12 9.77 12 7.5s1.36-4.06 2.55-5.03c.68-.69 1.59-1.02 2.5-1.02s1.82.33 2.5 1.02c1.19.97 2.55 2.76 2.55 5.03s-1.36 4.06-2.55 5.03c-.68.69-1.59 1.02-2.5 1.02m0-11c-.41 0-.82.12-1.19.38-.92.74-1.86 2.42-1.86 4.62s.94 3.88 1.86 4.62c.37.26.78.38 1.19.38s.82-.12 1.19-.38c.92-.74 1.86-2.42 1.86-4.62s-.94-3.88-1.86-4.62c-.37-.26-.78-.38-1.19-.38z"
+        ></path>
+      </svg>
+      Install xPatLife App on iOS
+    </h3>
+    <ol class="text-blue-800 dark:text-blue-200 space-y-2 text-sm">
+      <li><strong>1.</strong> Tap the <strong>Share</strong> button (square with arrow)</li>
+      <li><strong>2.</strong> Scroll down and tap <strong>"Add to Home Screen"</strong></li>
+      <li><strong>3.</strong> Confirm the app name and tap <strong>"Add"</strong></li>
+    </ol>
+  </div>
+
+  <!-- Generic Install Info (shown when none of the above apply) -->
+  <div
+    id="generic-info"
+    class="hidden bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg p-6 mb-6"
+  >
+    <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-3">Install as App</h3>
+    <p class="text-slate-700 dark:text-slate-300 mb-4 text-sm">
+      xPatLife can be installed as an app on your device for quick access and better performance.
+    </p>
+    <div class="space-y-3 text-sm text-slate-600 dark:text-slate-400">
+      <div>
+        <strong class="text-slate-900 dark:text-slate-100">On Android (Chrome, Firefox, Edge):</strong>
+        <p>Look for an install prompt at the bottom of the screen, or tap the menu and select "Install app"</p>
+      </div>
+      <div>
+        <strong class="text-slate-900 dark:text-slate-100">On iOS (Safari):</strong>
+        <p>Tap Share → Add to Home Screen, then name it and tap Add</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Install Buttons (Always Visible) -->
+  <div class="text-center max-w-3xl mx-auto">
+    <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4">
+      <button
+        id="install-button"
+        class="inline-flex items-center justify-center rounded-full border border-[#0154CF] bg-white font-semibold text-center text-base text-[#0154CF] leading-snug transition py-3.5 px-8 ease-in duration-200 hover:bg-blue-50 dark:bg-white dark:text-[#0154CF] dark:border-[#0154CF] dark:hover:bg-gray-300"
+      >
+        <span class="flex items-center gap-2">
+          <Icon name="tabler:download" class="w-5 h-5" />
+          Install App
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  interface BeforeInstallPromptEvent extends Event {
+    prompt: () => Promise<void>;
+    userChoice: Promise<{ outcome: 'accepted' | 'dismissed' }>;
+  }
+
+  let deferredPrompt: BeforeInstallPromptEvent | null = null;
+  const isIOS =
+    /iPad|iPhone|iPod/.test(navigator.userAgent) && !(window as unknown as Record<string, unknown>).MSStream;
+  const androidPromptEl = document.getElementById('android-prompt');
+  const iosInstructionsEl = document.getElementById('ios-instructions');
+  const genericInfoEl = document.getElementById('generic-info');
+  const installButton = document.getElementById('install-button');
+
+  // Listen for the beforeinstallprompt event (Android/Chromium browsers)
+  window.addEventListener('beforeinstallprompt', (e: Event) => {
+    e.preventDefault();
+    deferredPrompt = e as BeforeInstallPromptEvent;
+
+    // Show Android/Chrome prompt
+    androidPromptEl?.classList.remove('hidden');
+    iosInstructionsEl?.classList.add('hidden');
+    genericInfoEl?.classList.add('hidden');
+  });
+
+  // Handle install button click
+  installButton?.addEventListener('click', async () => {
+    if (deferredPrompt) {
+      await deferredPrompt.prompt();
+      const { outcome } = await deferredPrompt.userChoice;
+      console.log(`User response to the install prompt: ${outcome}`);
+      deferredPrompt = null;
+      androidPromptEl?.classList.add('hidden');
+    }
+  });
+
+  // Handle app installed event
+  window.addEventListener('appinstalled', () => {
+    console.log('PWA was installed');
+    androidPromptEl?.classList.add('hidden');
+  });
+
+  // Show appropriate instructions on page load
+  if (isIOS) {
+    iosInstructionsEl?.classList.remove('hidden');
+  } else {
+    genericInfoEl?.classList.remove('hidden');
+  }
+</script>

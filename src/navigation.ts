@@ -79,6 +79,10 @@ export const headerData = {
           href: getPermalink('/tools'),
         },
         {
+          text: 'xPatLife App',
+          href: getPermalink('/tools/xpatlife-app'),
+        },
+        {
           text: 'Brutto-Netto-Rechner',
           href: getPermalink('/tools/brutto-netto-rechner'),
         },
