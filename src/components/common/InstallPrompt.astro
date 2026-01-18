@@ -26,25 +26,22 @@ import { Icon } from 'astro-icon/components';
     </ol>
   </div>
 
-  <!-- Generic Install Info (shown when none of the above apply) -->
+  <!-- Android Manual Instructions (shown when prompt is not available) -->
   <div
-    id="generic-info"
-    class="hidden bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg p-6 mb-6"
+    id="android-instructions"
+    class="hidden bg-slate-50 dark:bg-slate-900/30 border border-slate-200 dark:border-slate-700 rounded-lg p-6 mb-6"
   >
-    <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-3">Install as App</h3>
-    <p class="text-slate-700 dark:text-slate-300 mb-4 text-sm">
-      xPatLife can be installed as an app on your device for quick access and better performance.
-    </p>
-    <div class="space-y-3 text-sm text-slate-600 dark:text-slate-400">
-      <div>
-        <strong class="text-slate-900 dark:text-slate-100">On Android (Chrome, Firefox, Edge):</strong>
-        <p>Look for an install prompt at the bottom of the screen, or tap the menu and select "Install app"</p>
-      </div>
-      <div>
-        <strong class="text-slate-900 dark:text-slate-100">On iOS (Safari):</strong>
-        <p>Tap Share → Add to Home Screen, then name it and tap Add</p>
-      </div>
-    </div>
+    <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-3 flex items-center gap-2">
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M17.6 11.48h.01v.01h-.01c0 1.65-.74 3.11-1.88 4.08v3.09h3.02c1.52-1.56 2.44-3.74 2.44-6.18s-.92-4.62-2.44-6.18h-3.02v3.09c1.14.97 1.88 2.43 1.88 4.08zM6.4 12.52c0-1.65.74-3.11 1.88-4.08v-3.09H5.26c-1.52 1.56-2.44 3.74-2.44 6.18s.92 4.62 2.44 6.18h3.02v-3.09c-1.14-.97-1.88-2.43-1.88-4.08zM7.76 5.74h8.48v8.48H7.76z"></path>
+      </svg>
+      Install xPatLife App on Android
+    </h3>
+    <ol class="text-slate-700 dark:text-slate-300 space-y-2 text-sm">
+      <li><strong>1.</strong> Tap the menu button <strong>(⋮)</strong> in the top right</li>
+      <li><strong>2.</strong> Select <strong>"Install app"</strong> or <strong>"Add to Home screen"</strong></li>
+      <li><strong>3.</strong> Confirm the installation</li>
+    </ol>
   </div>
 
   <!-- Install Buttons (Always Visible) -->
@@ -73,8 +70,12 @@ import { Icon } from 'astro-icon/components';
   const isIOS =
     /iPad|iPhone|iPod/.test(navigator.userAgent) && !(window as unknown as Record<string, unknown>).MSStream;
   const iosInstructionsEl = document.getElementById('ios-instructions');
-  const genericInfoEl = document.getElementById('generic-info');
+  const androidInstructionsEl = document.getElementById('android-instructions');
   const installButton = document.getElementById('install-button');
+
+  // Debug: log user agent
+  console.log('User Agent:', navigator.userAgent);
+  console.log('Is iOS:', isIOS);
 
   // Register Service Worker (required for PWA on Android)
   if ('serviceWorker' in navigator) {
@@ -82,19 +83,24 @@ import { Icon } from 'astro-icon/components';
       navigator.serviceWorker
         .register('/sw.js')
         .then((registration) => {
-          console.log('Service Worker registered:', registration);
+          console.log('✅ Service Worker registered successfully:', registration.scope);
         })
         .catch((error) => {
-          console.log('Service Worker registration failed:', error);
+          console.error('❌ Service Worker registration failed:', error);
         });
     });
+  } else {
+    console.warn('Service Worker not supported in this browser');
   }
 
   // Listen for the beforeinstallprompt event (Android/Chromium browsers)
   window.addEventListener('beforeinstallprompt', (e: Event) => {
     e.preventDefault();
     deferredPrompt = e as BeforeInstallPromptEvent;
-    console.log('beforeinstallprompt event fired - app is installable!');
+    console.log('✅ beforeinstallprompt event fired - app is installable!');
+    
+    // Hide manual instructions if prompt is available
+    androidInstructionsEl?.classList.add('hidden');
     
     // Show install button is ready
     if (installButton) {
@@ -104,32 +110,37 @@ import { Icon } from 'astro-icon/components';
 
   // Handle install button click
   installButton?.addEventListener('click', async () => {
+    console.log('Install button clicked. DeferredPrompt:', deferredPrompt ? 'available' : 'not available');
+    
     if (deferredPrompt) {
-      // Trigger the install prompt
-      await deferredPrompt.prompt();
-      const { outcome } = await deferredPrompt.userChoice;
-      console.log(`User response to the install prompt: ${outcome}`);
-      deferredPrompt = null;
+      try {
+        // Trigger the install prompt
+        await deferredPrompt.prompt();
+        const { outcome } = await deferredPrompt.userChoice;
+        console.log(`User response to the install prompt: ${outcome}`);
+        deferredPrompt = null;
+      } catch (error) {
+        console.error('Error showing install prompt:', error);
+      }
     } else {
-      // If no deferred prompt, show manual instructions
-      console.log('No deferred prompt available');
-      // For Android Chrome - show manual instructions
+      // Show manual instructions instead of alert
+      console.log('No deferred prompt available - showing manual instructions');
       if (!isIOS) {
-        alert('To install this app:\n\n1. Tap the menu button (⋮)\n2. Select "Install app" or "Add to Home screen"');
+        androidInstructionsEl?.classList.remove('hidden');
       }
     }
   });
 
   // Handle app installed event
   window.addEventListener('appinstalled', () => {
-    console.log('PWA was installed successfully!');
+    console.log('✅ PWA was installed successfully!');
     deferredPrompt = null;
+    androidInstructionsEl?.classList.add('hidden');
   });
 
   // Show appropriate instructions on page load
   if (isIOS) {
     iosInstructionsEl?.classList.remove('hidden');
-  } else {
-    genericInfoEl?.classList.remove('hidden');
   }
+  // Don't show Android instructions initially - wait for user to click button
 </script>
