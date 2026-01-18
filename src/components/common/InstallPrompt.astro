@@ -72,37 +72,58 @@ import { Icon } from 'astro-icon/components';
   let deferredPrompt: BeforeInstallPromptEvent | null = null;
   const isIOS =
     /iPad|iPhone|iPod/.test(navigator.userAgent) && !(window as unknown as Record<string, unknown>).MSStream;
-  const androidPromptEl = document.getElementById('android-prompt');
   const iosInstructionsEl = document.getElementById('ios-instructions');
   const genericInfoEl = document.getElementById('generic-info');
   const installButton = document.getElementById('install-button');
+
+  // Register Service Worker (required for PWA on Android)
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker
+        .register('/sw.js')
+        .then((registration) => {
+          console.log('Service Worker registered:', registration);
+        })
+        .catch((error) => {
+          console.log('Service Worker registration failed:', error);
+        });
+    });
+  }
 
   // Listen for the beforeinstallprompt event (Android/Chromium browsers)
   window.addEventListener('beforeinstallprompt', (e: Event) => {
     e.preventDefault();
     deferredPrompt = e as BeforeInstallPromptEvent;
-
-    // Show Android/Chrome prompt
-    androidPromptEl?.classList.remove('hidden');
-    iosInstructionsEl?.classList.add('hidden');
-    genericInfoEl?.classList.add('hidden');
+    console.log('beforeinstallprompt event fired - app is installable!');
+    
+    // Show install button is ready
+    if (installButton) {
+      installButton.setAttribute('data-ready', 'true');
+    }
   });
 
   // Handle install button click
   installButton?.addEventListener('click', async () => {
     if (deferredPrompt) {
+      // Trigger the install prompt
       await deferredPrompt.prompt();
       const { outcome } = await deferredPrompt.userChoice;
       console.log(`User response to the install prompt: ${outcome}`);
       deferredPrompt = null;
-      androidPromptEl?.classList.add('hidden');
+    } else {
+      // If no deferred prompt, show manual instructions
+      console.log('No deferred prompt available');
+      // For Android Chrome - show manual instructions
+      if (!isIOS) {
+        alert('To install this app:\n\n1. Tap the menu button (⋮)\n2. Select "Install app" or "Add to Home screen"');
+      }
     }
   });
 
   // Handle app installed event
   window.addEventListener('appinstalled', () => {
-    console.log('PWA was installed');
-    androidPromptEl?.classList.add('hidden');
+    console.log('PWA was installed successfully!');
+    deferredPrompt = null;
   });
 
   // Show appropriate instructions on page load
