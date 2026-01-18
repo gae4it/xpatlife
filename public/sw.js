@@ -14,8 +14,14 @@ self.addEventListener('activate', (event) => {
   event.waitUntil(self.clients.claim());
 });
 
-// Minimal fetch handler - just pass through to network
+// Minimal fetch handler with proper error handling
 self.addEventListener('fetch', (event) => {
-  // Just fetch from network, no caching
-  event.respondWith(fetch(event.request));
+  // For external requests (like images from unsplash), just pass through
+  event.respondWith(
+    fetch(event.request).catch(() => {
+      // If fetch fails, return the original request error
+      // Don't try to serve offline content
+      return fetch(event.request);
+    })
+  );
 });
