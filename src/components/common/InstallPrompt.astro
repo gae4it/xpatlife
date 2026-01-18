@@ -26,27 +26,12 @@ import { Icon } from 'astro-icon/components';
     </ol>
   </div>
 
-  <!-- Android Manual Instructions (shown when prompt is not available) -->
-  <div
-    id="android-instructions"
-    class="hidden bg-slate-50 dark:bg-slate-900/30 border border-slate-200 dark:border-slate-700 rounded-lg p-6 mb-6"
-  >
-    <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-3 flex items-center gap-2">
-      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M17.6 11.48h.01v.01h-.01c0 1.65-.74 3.11-1.88 4.08v3.09h3.02c1.52-1.56 2.44-3.74 2.44-6.18s-.92-4.62-2.44-6.18h-3.02v3.09c1.14.97 1.88 2.43 1.88 4.08zM6.4 12.52c0-1.65.74-3.11 1.88-4.08v-3.09H5.26c-1.52 1.56-2.44 3.74-2.44 6.18s.92 4.62 2.44 6.18h3.02v-3.09c-1.14-.97-1.88-2.43-1.88-4.08zM7.76 5.74h8.48v8.48H7.76z"></path>
-      </svg>
-      Install xPatLife App on Android
-    </h3>
-    <ol class="text-slate-700 dark:text-slate-300 space-y-2 text-sm">
-      <li><strong>1.</strong> Tap the menu button <strong>(⋮)</strong> in the top right</li>
-      <li><strong>2.</strong> Select <strong>"Install app"</strong> or <strong>"Add to Home screen"</strong></li>
-      <li><strong>3.</strong> Confirm the installation</li>
-    </ol>
-  </div>
-
-  <!-- Install Buttons (Always Visible) -->
-  <div class="text-center max-w-3xl mx-auto">
-    <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4">
+  <!-- Install Button (shown when beforeinstallprompt fires) -->
+  <div id="install-container" class="hidden text-center max-w-3xl mx-auto">
+    <p class="text-lg text-muted dark:text-slate-400 mb-8">
+      Install xPatLife on your home screen for quick access whenever you need it
+    </p>
+    <div class="flex justify-center">
       <button
         id="install-button"
         class="inline-flex items-center justify-center rounded-full border border-[#0154CF] bg-white font-semibold text-center text-base text-[#0154CF] leading-snug transition py-3.5 px-8 ease-in duration-200 hover:bg-blue-50 dark:bg-white dark:text-[#0154CF] dark:border-[#0154CF] dark:hover:bg-gray-300"
@@ -70,77 +55,62 @@ import { Icon } from 'astro-icon/components';
   const isIOS =
     /iPad|iPhone|iPod/.test(navigator.userAgent) && !(window as unknown as Record<string, unknown>).MSStream;
   const iosInstructionsEl = document.getElementById('ios-instructions');
-  const androidInstructionsEl = document.getElementById('android-instructions');
   const installButton = document.getElementById('install-button');
+  const installContainer = document.getElementById('install-container');
 
-  // Debug: log user agent
-  console.log('User Agent:', navigator.userAgent);
-  console.log('Is iOS:', isIOS);
-
-  // Register Service Worker (required for PWA on Android)
+  // Register Service Worker immediately (required for PWA on Android)
   if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker
-        .register('/sw.js')
-        .then((registration) => {
-          console.log('✅ Service Worker registered successfully:', registration.scope);
-        })
-        .catch((error) => {
-          console.error('❌ Service Worker registration failed:', error);
-        });
-    });
-  } else {
-    console.warn('Service Worker not supported in this browser');
+    navigator.serviceWorker
+      .register('/sw.js')
+      .then((registration) => {
+        console.log('Service Worker registered:', registration);
+      })
+      .catch((error) => {
+        console.log('Service Worker registration failed:', error);
+      });
   }
 
   // Listen for the beforeinstallprompt event (Android/Chromium browsers)
   window.addEventListener('beforeinstallprompt', (e: Event) => {
     e.preventDefault();
     deferredPrompt = e as BeforeInstallPromptEvent;
-    console.log('✅ beforeinstallprompt event fired - app is installable!');
+    console.log('beforeinstallprompt event fired - app is installable!');
     
-    // Hide manual instructions if prompt is available
-    androidInstructionsEl?.classList.add('hidden');
-    
-    // Show install button is ready
-    if (installButton) {
-      installButton.setAttribute('data-ready', 'true');
-    }
+    // Show the install button container
+    installContainer?.classList.remove('hidden');
   });
 
   // Handle install button click
   installButton?.addEventListener('click', async () => {
-    console.log('Install button clicked. DeferredPrompt:', deferredPrompt ? 'available' : 'not available');
-    
-    if (deferredPrompt) {
-      try {
-        // Trigger the install prompt
-        await deferredPrompt.prompt();
-        const { outcome } = await deferredPrompt.userChoice;
-        console.log(`User response to the install prompt: ${outcome}`);
-        deferredPrompt = null;
-      } catch (error) {
-        console.error('Error showing install prompt:', error);
-      }
-    } else {
-      // Show manual instructions instead of alert
-      console.log('No deferred prompt available - showing manual instructions');
-      if (!isIOS) {
-        androidInstructionsEl?.classList.remove('hidden');
-      }
+    if (!deferredPrompt) {
+      console.log('No deferred prompt available');
+      return;
+    }
+
+    try {
+      // Trigger the native install prompt
+      await deferredPrompt.prompt();
+      const { outcome } = await deferredPrompt.userChoice;
+      console.log(`User response: ${outcome}`);
+      
+      deferredPrompt = null;
+      
+      // Hide the button after user makes a choice
+      installContainer?.classList.add('hidden');
+    } catch (error) {
+      console.error('Error showing install prompt:', error);
     }
   });
 
   // Handle app installed event
   window.addEventListener('appinstalled', () => {
-    console.log('✅ PWA was installed successfully!');
+    console.log('PWA was installed successfully!');
     deferredPrompt = null;
-    androidInstructionsEl?.classList.add('hidden');
+    installContainer?.classList.add('hidden');
   });
 
-  // Show appropriate instructions on page load
+  // Show iOS instructions if on iOS
   if (isIOS) {
     iosInstructionsEl?.classList.remove('hidden');
   }
-  // Don't show Android instructions initially - wait for user to click button
 </script>
