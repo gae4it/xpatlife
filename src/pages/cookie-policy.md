@@ -77,9 +77,7 @@ You can change your preferences at any time by clearing your browser cookies and
 Some cookies are set by third-party services we use:
 
 - **Google Analytics** - Analyzes website traffic and user behavior
-- **Cronitor RUM (Real User Monitoring)** - Measures website performance and reliability
-- **Cloudflare Web Analytics** - Measures website traffic and basic usage statistics
-- **Social Media Platforms** - Enable social sharing features
+- **GoatCounter** - Measures website traffic
 
 These third parties have their own cookie policies.
 
