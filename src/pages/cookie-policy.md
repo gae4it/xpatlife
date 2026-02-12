@@ -28,7 +28,7 @@ These cookies are necessary for the website to function properly and cannot be d
 These cookies help us understand how visitors interact with our website:
 
 - Google Analytics - tracks page views, user behavior, and traffic sources
-- Cronitor RUM (Real User Monitoring) - helps us measure website performance and reliability (e.g., load times and errors)
+- Goatcounter Analytics - privacy-focused analytics without cookies
 - Cloudflare Web Analytics - helps us understand traffic and usage in a privacy-focused way (Cloudflare states it is designed to be cookie-less; however, it may still process technical request data)
 - Performance monitoring
 - Error tracking

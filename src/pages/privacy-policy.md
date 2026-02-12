@@ -71,14 +71,14 @@ You can control cookies through your browser settings. However, disabling cookie
 We may use third-party services that collect, monitor, and analyze data, including:
 
 - **Google Analytics** - To understand website usage and improve user experience
-- **Cronitor RUM (Real User Monitoring)** - To measure website performance and reliability (e.g., page load timing, errors). This may involve processing technical and usage data such as page URLs, device/browser information, and IP address.
+- **Goatcounter Analytics** - Privacy-focused analytics that doesn't track personally identifiable information
 - **Cloudflare Web Analytics** - To measure website traffic and basic usage statistics in a privacy-focused way. Depending on configuration, this may involve processing technical information such as page URL, referrer, browser/device details, and IP address (e.g., for security, abuse prevention, or approximate location).
 - **Social Media Platforms** - If you share our content on social media
 - **Content Delivery Networks** - To optimize website performance
 
 These third parties have their own privacy policies governing their use of your information.
 
-For Cronitor, see their documentation and privacy information: https://cronitor.io/
+For Goatcounter Analytics, see their privacy information: https://www.goatcounter.com/
 
 For Cloudflare Web Analytics, see Cloudflare privacy information: https://www.cloudflare.com/privacypolicy/
 
