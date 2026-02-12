@@ -41,14 +41,17 @@ const { language, textDirection } = I18N;
         const CONSENT_KEY = 'xpatlife_cookie_consent';
         const GA_ID = 'G-30WVJD55QS';
         const GOATCOUNTER_URL = 'https://xpatlife.goatcounter.com/count';
-        const CLOUDFLARE_WEB_ANALYTICS_TOKEN = 'e4b24fcbfccb478487ee3914a11ce7b0';
 
         function loadScript(src, attrs) {
           const script = document.createElement('script');
           script.src = src;
           if (attrs) {
             for (const key in attrs) {
-              script.setAttribute(key, attrs[key]);
+              if (key === 'async' || key === 'defer') {
+                script[key] = true;
+              } else {
+                script.setAttribute(key, attrs[key]);
+              }
             }
           }
           document.head.appendChild(script);
@@ -78,12 +81,6 @@ const { language, textDirection } = I18N;
 
           // Goatcounter Analytics
           loadScript('//gc.zgo.at/count.js', { async: '', 'data-goatcounter': GOATCOUNTER_URL });
-
-          // Cloudflare Web Analytics
-          loadScript('https://static.cloudflareinsights.com/beacon.min.js', {
-            defer: '',
-            'data-cf-beacon': JSON.stringify({ token: CLOUDFLARE_WEB_ANALYTICS_TOKEN }),
-          });
         }
 
         window.__xpatlife_enableAnalytics = enableAnalytics;
