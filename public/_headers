@@ -1,5 +1,5 @@
 /*
-  Content-Security-Policy: script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com
+  Content-Security-Policy: script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://gc.zgo.at https://static.cloudflareinsights.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com
 
 /_astro/*
   Cache-Control: public, max-age=31536000, immutable
